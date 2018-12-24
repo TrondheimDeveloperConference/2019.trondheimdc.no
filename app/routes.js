@@ -2,49 +2,26 @@ import React from 'react';
 import index from './pages/Index/Index.js';
 import partners from './pages/Partners/Partners.js';
 import notFound from './pages/NotFound/NotFound.js';
-import partnermoteDesember from './pages/partnermote-desember.js';
-import partnermoteApril from './pages/partnermote-april.js';
-import partnermoteJuni from './pages/partnermote-juni.js';
-import academy from './pages/Academy/Academy.js';
-import academyAutumn from './pages/Academy/AcademyAutumn.js';
-import kids from './pages/Kids/Kids.js';
-import academyLocation from './pages/academy-program.js';
 import speakers from './pages/Speakers/Speakers.js';
-import journeyzone from './pages/Journeyzone/Journeyzone.js';
 import speakerinfo from './pages/speakerinfo';
 import workshops from './pages/Workshops/Workshops.js';
 import monetaryPolicy from './pages/monetary-policy';
-import movie from './pages/Movie/Movie.js';
 import tipsAndTricks from './pages/tips-and-tricks';
 import tickets from './pages/Tickets/Tickets.js';
 import program from './pages/Program/Program.js';
 import programDetails from './pages/Program/ProgramDetails.js';
 import { store } from './store';
-import pageview from './analytics';
-import academyData from './data/academy';
 import info from './pages/Info/Info.js';
-import frivillig from './pages/Frivillig/Frivillig.js';
 
 const routes = compile({
     '/partners': partners,
-    '/partnermote-desember': partnermoteDesember,
-    '/partnermote-april': partnermoteApril,
-    '/academy': academyAutumn,
-    '/academy-spring': academy,
-    '/academy/oslo': academyLocation(academyData.oslo),
-    '/academy/tromso': academyLocation(academyData.tromso),
-    '/academy/bergen': academyLocation(academyData.bergen),
-    '/kids': kids,
     '/speakers': speakers,
-    '/countdown': movie,
-    '/movie': movie,
     '/workshops': workshops,
     '/speakers/monetary-policy': monetaryPolicy,
     '/speakers/tips': tipsAndTricks,
+    '/speakers/info': speakerinfo,
     '/tickets': tickets,
-    '/journeyzone': journeyzone,
     '/info': info,
-    '/frivillig': frivillig,
     '/program': program,
     '/program/([a-zA-Z0-9_-]+)': programDetails,
     '/': index
@@ -87,12 +64,6 @@ function navigate(ev) {
 }
 
 export function getPage(requestedPage) {
-
-    if (requestedPage === '/countdown') {
-        history.pushState('', 'JavaZone 2018', '/movie');
-        requestedPage = '/movie';
-    }
-
     if (requestedPage[requestedPage.length - 1] === '/' && requestedPage.length > 1) {
         requestedPage = requestedPage.substring(0, requestedPage.length - 1);
     }
@@ -103,14 +74,8 @@ export function getPage(requestedPage) {
     });
 
     if (!page) {
-        pageview('/404');
         return notFound;
-    } else if (page === '/countdown') {
-        pageview('/movie');
-        return movie;
     }
-
-    pageview(requestedPage);
 
     if (page && page.page.component) {
         if (page.page.action) {
