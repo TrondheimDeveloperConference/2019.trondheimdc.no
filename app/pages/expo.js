@@ -1,6 +1,6 @@
 import header from '../assets/header_expo.jpg';
-import { Page, Heading, LargeHeading, SmallHeading, Container } from '../components/page';
-import { Block, Header, Content, P } from '../components/block';
+import { Page, Heading, LargeHeading, Container } from '../components/page';
+import { P } from '../components/block';
 import { CBlock, CHeader, CContent } from '../components/centeredblock';
 
 const images = require.context('../assets/expo', true, /\.png$/);

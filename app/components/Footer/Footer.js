@@ -3,7 +3,6 @@ import * as React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Facebook, Mail, Twitter, Github } from 'react-feather';
 import Link from '../Link/Link';
-import Button from '../Button/Button';
 import './Footer.less';
 
 type FooterProps = {
@@ -43,9 +42,6 @@ function Footer(props: FooterProps): React.Node {
                         <Col>
                             <a href={props.githubUrl} target="_blank"><Github className="social-icon" size="32" /></a>
                         </Col>*/}
-                    </Row>
-                    <Row center="xs">
-                        <Link href={props.javabinUrl} className="javabin nav-item draw meet">Made by javaBin</Link>
                     </Row>
                     <Row center="xs" className="info-spacer">
                         <Col>
