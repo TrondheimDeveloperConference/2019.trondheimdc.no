@@ -7,17 +7,6 @@ import './Section.less';
 
 type Orientation = "top" | "bottom";
 
-type PixelBorderProps = {
-    orientation: Orientation
-}
-
-function PixelBorder(props: PixelBorderProps): React.Node {
-    let pixelBorderClass = `pixel-border-${props.orientation}`;
-    return (
-        <div className={pixelBorderClass}></div>
-    )
-}
-
 type SectionProps = {
     fluid?: bool,
     alternate?: bool,
@@ -43,9 +32,6 @@ function Section(props: SectionProps) {
 
     return (
         <div className="section-container">
-            {props.pixel ? <Row>
-                <PixelBorder orientation="top" />
-            </Row> : null}
             <Grid className={sectionClass} fluid>
                 <Grid fluid={props.fluid}>
                     <Row>
@@ -53,11 +39,8 @@ function Section(props: SectionProps) {
                     </Row>
                 </Grid>
             </Grid>
-            {props.pixel ? <Row>
-                <PixelBorder orientation="bottom" />
-            </Row> : null}
         </div>
     )
 }
 
-export { Section, PixelBorder };
+export { Section };

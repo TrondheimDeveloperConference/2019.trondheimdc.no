@@ -9,6 +9,7 @@ import { Header } from '../../components/Header/Header';
 import Page from '../../components/Page/Page.js';
 import javazoneExpo from '../../assets/header_expo.jpg';
 import './Index.less';
+import Meetups from "./Meetups";
 
 function Index() {
     return (
@@ -16,24 +17,38 @@ function Index() {
             <Container fullWidth>
                 <Banner />
             </Container>
-            <Section>
+            <Section alternate>
                 <Header align="center">This year's event...</Header>
-                <LeftBlock header="JavaZone 101 the who, what and where"> 
-                <p>
-                    JavaZone – the biggest European community-driven conference for modern developers will be 17
-                    years old in 2018! Don’t miss out on two days of inspiring tech talks,
-                    a day of hands-on sessions, mingling, and a great party!
-                </p>
-                <p>
-                    JavaZone is organized by <a href="https://java.no">javaBin</a>, the Norwegian Java User Group. Our goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize.
-                </p>
-                <p>
-                    We have been organizing JavaZone since 2001 and have been excited to watch the event grow bigger and better every year. In 2017 we hosted over 3100 participants and almost 200 speakers across 7 parallel tracks over the course of two days. In addition, we also offered a selection of 9 workshops held on the day before the conference started.
-                </p>
-                <p>
-                    We would not be what we are today without YOU! Thank you for your support and contributions over the years. Don’t procrastinate! Join your fellow Java developers at JavaZone on September 12th-13th, 2018!
-                </p>
-            </LeftBlock>
+                <LeftBlock header="TDC 101">
+                    <p>
+                        Trondheim Developer Conference (TDC) is a community driven event for
+                        developers and digital designers.
+                    </p>
+                    <Meetups />
+                    <p>
+                        The above communities have joined forces and are giving developers and designers in the greater
+                        Trondheim
+                        region and Norway an arena for learning, networking and communication across all development
+                        disciplines.
+                    </p>
+
+                    <p>
+                        The agenda consists of multiple tracks for front-end, back-end, agile developers, and digital
+                        design.
+                        The conference strives to reach a balance between local, national and international speakers,
+                        and a relatively large share of call-for-presentation submissions.
+                    </p>
+
+                    <p>
+                        TDC is a noncommercial event where all profit goes towards next year's conference
+                        and other community events throughout the year in Trondheim.
+                        For example, some of the profits from TDC is used to rent a venue where all user groups
+                        can meetup throughout the year, and the statutes of the conference is to help existing
+                        and new user groups to create an arena where every developer in Trondheim can meet for great
+                        talks,
+                        lively discussions and networking.
+                    </p>
+                </LeftBlock>
             </Section>
             <Section pixel alternate>
                 <Stats />
@@ -41,7 +56,7 @@ function Index() {
             <Section fluid>
                 <ImageBlock image={javazoneExpo} alt="JavaZone Expo" />
             </Section>
-        </Page> 
+        </Page>
     )
 }
 

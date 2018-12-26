@@ -1,12 +1,10 @@
 //@flow
 import * as React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { PixelBorder } from '../../components/Section/Section';
 import { Facebook, Mail, Twitter, Github } from 'react-feather';
 import Link from '../Link/Link';
 import Button from '../Button/Button';
 import './Footer.less';
-import border from '../../assets/2018/pixelborder.svg';
 
 type FooterProps = {
     javabinUrl?: string,
@@ -30,9 +28,6 @@ Footer.defaultProps = {
 function Footer(props: FooterProps): React.Node {
     return (
         <Grid className="footer" fluid>
-            <Row>
-                <PixelBorder orientation="top" />
-            </Row>
             <Row around="xs" className="footer-content">
                 <Col xs={12} sm={8} md={4} lg={4}>
                     <Row center="xs" around="xs">
