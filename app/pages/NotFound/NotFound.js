@@ -23,7 +23,7 @@ function NotFound() {
                     </p>
                     <p>
                         If you have a lot of time on your hands (or are just really kind),
-                        we would really appreciate it if you <a href='mailto:javazone@java.no'>
+                        we would really appreciate it if you <a href='mailto:connect@trondheimdc.no'>
                         tell us about it</a>.
                     </p>
                 </LeftBlock>

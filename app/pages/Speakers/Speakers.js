@@ -30,41 +30,33 @@ const Format = (props) => (
     </li>
 );
 
-const lightnings = {
-    icon: 'icon-energy',
-    title: 'Lightning talks',
-    length: '10 or 20 minutes',
-    description: 'Are you presenting a great new idea, or want to give the audience a teaser for a cool topic? Then you should strongly consider the lightning talk format.  Note that the 10-20 minute time limit is strictly enforced!'
-};
-
 const presentations = {
     icon: 'icon-graduation',
     title: 'Presentations',
-    length: '45 or 60 minutes',
-    description: 'Presentations at JavaZone can be either 45 or 60 minutes long. This gives you room to elaborate on an idea. When submitting your talk, please indicate clearly in the outline how much time is reserved for questions.'
+    length: '30 minutes',
+    description: 'Presentations at TDC are 30 minutes long.'
 };
 
 const workshops = {
     icon: 'icon-screen-desktop',
     title: 'Workshops',
     length: '2 hours, 4 hours, 8 hours',
-    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday September 11th. The format for the workshops is in-depth, hands-on and interactive.'
+    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 22th and 23th. The format for the workshops is in-depth, hands-on and interactive.'
 };
 
 function Speakers(props: SpeakerProps) {
     return (
         <Page name='speakers'>
-            <PageHeader subHeader="Speak at JavaZone 2018">Call for speakers</PageHeader>
+            <PageHeader subHeader="Speak at TDC 2019">Call for speakers</PageHeader>
             <Section>
-	            <CenterBlock header="About JavaZone">
+	            <CenterBlock header="About Trondheim Developer Conference">
                     <p>
-                   		JavaZone 2018 will be the 17th consecutive JavaZone conference, and will consist of a day of pre-conference workshops on September 11th, followed by two days of lightning talks and presentations on September 12th and 13th.
+                   		TDC 2019 will be the 7th consecutive Trondheim Developer Conference, and will consist of a day of presentations on October 21th and hands on workshops on the following two days.
 					</p>
 					<p>
-                        Last year's event was completely sold out, with more than 3100 attendees enjoying 141 sessions.
+                        Last year's event was completely sold out, with more than 700 attendees enjoying XXX sessions.
                     </p>
-                    <p>
-                        JavaZone hosts both internationals and home-grown Norwegian talent as speakers. We'd love to have you join us in 2018!
+                    <p>TDC hosts both internationals and home-grown Norwegian talent as speakers. We'd love to have you join us in 2019!
                     </p>
                     <p>
                         <br />
@@ -72,7 +64,7 @@ function Speakers(props: SpeakerProps) {
                     </p>
                     <p>
                     	<br />
-	                    <a className='button button--transparent' href="http://submit.javazone.no">See your submitted sessions</a>
+	                    <a className='button button--transparent' href="http://submit.trondheimdc.no">See your submitted sessions</a>
 	                </p>
 	            </CenterBlock>
 	        </Section>
@@ -80,15 +72,19 @@ function Speakers(props: SpeakerProps) {
             <ImageBlock image={speakers1} alt="Speakers page separator image" />
 
 	        <Section>
-		        <LeftBlock header="What is it like speaking at JavaZone?">
+		        <LeftBlock header="What is it like speaking at Trondheim Developer Conference?">
                     <p>
-                        Over the last decade JavaZone has grown to become one of the most important Java events in Europe! You can see for yourself – 1174 videos from previous years talks are available for free at <a href='https://vimeo.com/javazone'>Vimeo</a>, and the <a href='https://2017.javazone.no/program'>full program from JavaZone 2017</a> is also available.
+                        TDC has become the most important IT event in the Trondheim area! You can see for yourself
+                        – 178 videos from previous years talks are available for free at <a href='https://vimeo.com/trondheimdc'>Vimeo</a>,
+                        and the <a href='https://2018.trondheimdc.no/program'>full program from TDC 2018</a> is also available.
                     </p>
                     <p>
-                        We can brag as much as we want, but JavaZone would be nothing without all the great speakers! That's why we need your help to make sure that JavaZone 2018 will be at least as awesome as the earlier events. If you think you have something interesting to share, please submit your talk or workshop at the latest on April 8th 2018.
+                        We can brag as much as we want, but TDC would be nothing without all the great speakers!
+                        That's why we need your help to make sure that TDC 2019 will be at least as awesome as the earlier events.
+                        If you think you have something interesting to share, please submit your talk or workshop at the latest on June 3rd 2019.
                     </p>
                     <p>
-                        JavaZone is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
+                        Trondheim Developer Conference is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
                     </p>
 	            </LeftBlock>
 	        </Section>
@@ -107,13 +103,12 @@ function Speakers(props: SpeakerProps) {
                         You should think about which format your talk will work
                         best in. Are you presenting a new idea, or do you require
                         more time to elaborate on your subject? How hands-on do
-                        you want to be? We have three formats you can present
+                        you want to be? We have two formats you can present
                         your material in.
                     </p>
 	            </LeftBlock>
 	            <CenterBlock>
 	                <ul className='presentation-formats'>
-	                    <Format {...lightnings} />
 	                    <Format {...presentations} />
 	                    <Format {...workshops} />
 	                </ul>
@@ -121,28 +116,20 @@ function Speakers(props: SpeakerProps) {
 
 	            <LeftBlock header="Audience and Topics">
 	                    <p>
-	                        JavaZone is a conference for developers and technical architects, with an emphasis on technical talks. However, we are open to talks about other areas, including methodology, project management, and other topics related to programming.
+	                        TDC is a conference for developers and everything IT, with an emphasis on technical talks.
+                            However, we are open to talks about other areas, including methodology, project management, and other topics related to programming.
 	                    </p>
-	                    <p>
-                            Despite our conference's name, we do not limit our content to Java technology. We will consider all talks based on their relevance to developers and technical architects. We do however set a focus on technology surrounding the JVM when selecting talks.
-                        </p>
-	            </LeftBlock>
-
-	            <LeftBlock header="Get Some Inspiration">
-                    <Dl className='speakers__inspiration'>
-                        <Dt className='speakers__inspiration-title'>Speakers workshop</Dt>
-                        <Dd className='speakers__inspiration-description'>On the 6th of March we will be <a href='https://www.meetup.com/javaBin/events/247318304/'>hosting a workshop for all those considering submitting a talk to JavaZone</a>.</Dd>
-                        <Dt className='speakers__inspiration-title'>Presentation skills workshop</Dt>
-                        <Dd className='speakers__inspiration-description'>JavaZone has a strong tradition of nurturing local speaker talent. To help with this we arrange a presentation skills workshop in August. This workshop is held in Oslo and is free for all accepted speakers. This workshop will be held in Norwegian.</Dd>
-                    </Dl>
 	            </LeftBlock>
 
 	            <LeftBlock header="Ongoing Evaluation of Talks">
                     <p>
-                        Each year we receive hundreds of submissions and we consider each submission as it arrives. Due to the big amount of submission we can however not guarantee that you hear from us immediately. We do however answer all submissions and try to do so no later than in July.
+                        Each year we receive many submissions and we consider each submission as it arrives.
+                        Due to the large amount of submission we can however not guarantee that you hear from us immediately.
+                        We do however answer all submissions and try to do so no later than in August.
                     </p>
                     <p>
-                        Our advice to you is simple. <strong>Submit early!</strong> The earlier you submit, the more likely you are to be noticed. Avoid drowning in the end-of-Call for Speakers tsunami!
+                        Our advice to you is simple. <strong>Submit early!</strong> The earlier you submit,
+                        the more likely you are to be noticed. Avoid drowning in the end-of-Call for Speakers tsunami!
                     </p>
                 </LeftBlock>
                 <CenterBlock>
@@ -157,7 +144,7 @@ function Speakers(props: SpeakerProps) {
             <ImageBlock image={speakers3} alt="Speakers page separator image" />
 
             <Section>
-	            <CenterBlock header="Dates & Deadlines for JavaZone 2018">
+	            <CenterBlock header="Dates & Deadlines for Trondheim Developer Conference 2019">
 	                <p>
 	                </p>
                     <Timeline />
@@ -166,9 +153,7 @@ function Speakers(props: SpeakerProps) {
 	            <LeftBlock header="What’s in it for me?">
 	                    <Dl className='speakers__accepted'>
 	                        <Dt className='speakers__accepted-title'>Accepted presentations and workshops</Dt>
-	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on September 11th. Finally, you have first priority on the limited number of slots for JourneyZone, our annual speaker adventure.</Dd>
-	                        <Dt className='speakers__accepted-title'>Accepted lightning talks</Dt>
-	                        <Dd className='speakers__accepted-description'>You are invited to the speakers' dinner, held on September 11th, and will also be invited to apply for a place at JourneyZone. Note that you have to provide your own ticket to JavaZone.</Dd>
+	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on Ocotober 20th.</Dd>
 	                        <Dt className='speakers__accepted-title'>Coverage of Expenses</Dt>
 	                        <Dd className='speakers__accepted-description'>Please see our <Link href='/speakers/monetary-policy'>reimbursement policy</Link> if you have any questions regarding coverage of other expenses.</Dd>
 	                    </Dl>
@@ -176,7 +161,9 @@ function Speakers(props: SpeakerProps) {
 
             	<LeftBlock header="Important principles">
                     <p>
-                        JavaZone is proud to be an independent and community-driven conference. It is organized by volunteers from javaBin (the Norwegian Java User Group) and is run as a non-profit organisation. This means that we have three important principles for selecting talks:
+                        TDC is proud to be an independent and community-driven conference.
+                        It is organized by volunteers from many of Trondheims IT-meetups and is run as a non-profit organisation.
+                        This means that we have three important principles for selecting talks:
                     </p>
                     <ul className='speakers__list'>
                         <li className='speakers__principle'>We do not sell speaker slots.</li>
@@ -191,18 +178,14 @@ function Speakers(props: SpeakerProps) {
 	            <CenterBlock>
                         <p>
                             <br />
-                            Our call for speakers is now closed, but you can still see (and edit) the talks you have submitted.
-                        </p>
-                        <p>
-                            <br />
-                            <a className='button button--transparent' href="http://submit.javazone.no">See your submitted sessions</a>
+                            <a className='button button--transparent' href="http://submit.trondheimdc.no">Submit a talk</a>
                         </p>
 	            </CenterBlock>
 
-	            <CenterBlock header="We hope to see you at JavaZone 2018 – please feel free to spread the word to your local community!">
+	            <CenterBlock header="We hope to see you at TDC 2019 – please feel free to spread the word to your local community!">
 	                    <p className='speakers__regards'>
 	                        <br />
-	                        Best regards,<br />the JavaZone Program Committee
+	                        Best regards,<br />the Trondheim Developer Conference Program Committee
 	                    </p>
 	            </CenterBlock>
 	        </Section>

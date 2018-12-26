@@ -1,21 +1,15 @@
 import { connect } from 'react-redux';
 import { Link } from '../../components/link';
-import { store } from '../../store';
 import { getSessions } from '../../actions/sessions';
 import { setLanguage, setShow, setDay, setFilteredList } from '../../actions/filters';
 import { Section } from '../../components/Section/Section.js';
 import PageHeader from '../../components/PageHeader/PageHeader.js';
-import { CenterBlock, LeftBlock, ImageBlock } from '../../components/Block/Block.js';
 import { Clock, Globe, User, Users } from 'react-feather';
 import Page from '../../components/Page/Page';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Circle, CheckCircle } from 'react-feather';
 import * as React from 'react';
 import { PlayCircle } from 'react-feather';
-import Button from '../../components/Button/Button.js';
-import { Container, Heading, LargeHeading, SmallHeading } from '../../components/page';
-import { Block, Header, Content, P } from '../../components/block';
-import { CBlock, CHeader, CContent } from '../../components/centeredblock';
 import { without, includes, get, filter, compose, join, map, reduce, orderBy, last, find, groupBy } from 'lodash/fp';
 import Loader from '../../components/Loader/Loader.js';
 import './Program.less';
@@ -51,21 +45,6 @@ const Failure = () => (
     <div className='program__loading'>
         <h2 className='program__loading-header'>Woooops!</h2>
         It seems something is seriously wrong here. We are most likely informed and working on it, so just try again in a while.
-    </div>
-);
-
-function showEmptyMyProgram(state) {
-    return state.show === 'my' && state.myprogram.length === 0;
-}
-
-const EmptyMyProgram = () => (
-    <div className='program__empty'>
-        <p>
-            What’s this, you say? Well, it’s your program! Switch over to "All", "Norwegian" or "English",
-            and start adding stuff to it with the <i className='icon-plus'></i> button. Keep in mind that this
-            is saved to your browsers localStorage, so you should do it on the device you will be using during JavaZone.
-            If you want to remove something from your program, just hit the <i className='icon-check'></i> button.
-        </p>
     </div>
 );
 
@@ -439,7 +418,7 @@ class Program extends React.Component<ProgramProps, ProgramState> {
 
         return (
             <Page name='program'>
-                <PageHeader subHeader="Mark your schedule">Javazone Program 2018</PageHeader>
+                <PageHeader subHeader="Mark your schedule">Trondheim Developer Conference Program 2019</PageHeader>
                 {content}
             </Page>
         );

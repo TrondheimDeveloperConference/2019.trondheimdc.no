@@ -15,10 +15,6 @@ import { CBlock, CHeader, CContent } from '../../components/centeredblock';
 import { get, find, compose, constant } from 'lodash/fp';
 import { getSession } from '../../actions/session';
 
-const tooSmallHack = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
-
 type ProgramDetailsProps = {
     sessions: [];
     id: string;
