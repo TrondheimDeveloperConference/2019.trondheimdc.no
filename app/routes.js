@@ -1,6 +1,7 @@
 import React from 'react';
 import index from './pages/Index/Index.js';
 import partners from './pages/Partners/Partners.js';
+import startups from './pages/Partners/Startups';
 import notFound from './pages/NotFound/NotFound.js';
 import speakers from './pages/Speakers/Speakers.js';
 import speakerinfo from './pages/speakerinfo';
@@ -15,6 +16,7 @@ import info from './pages/Info/Info.js';
 
 const routes = compile({
     '/partners': partners,
+    '/startups': startups,
     '/speakers': speakers,
     '/workshops': workshops,
     '/speakers/monetary-policy': monetaryPolicy,
