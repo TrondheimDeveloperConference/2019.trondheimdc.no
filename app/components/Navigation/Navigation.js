@@ -7,7 +7,8 @@ import Button from '../../components/Button/Button';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
 import { Menu } from 'react-feather'; 
-import JavazoneLogo from '../../assets/2018/javazone2018_logo_small.svg';
+import TDCLogo from '../../assets/logo/logo.svg';
+import TDCLogo_white from '../../assets/logo/logo-white.svg';
 import './Navigation.less';
 
 type NavigationProps = {
@@ -33,15 +34,19 @@ type NavigationState = {
     showOnlyIcon: bool
 }
 
-function Logo() {
+type LogoProps = {
+    sticky: bool
+}
+function Logo(props: LogoProps) {
 
     let logoClass = classnames({
         'logo-nav': true
     })
 
+    const logo = props.sticky ? TDCLogo_white : TDCLogo;
     return (
         <Link href="/" className={logoClass}>
-            <img src={JavazoneLogo} alt="Logo" />
+            <img src={logo} alt="Logo" />
         </Link>
     )
 }
