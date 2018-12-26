@@ -13,6 +13,7 @@ import program from './pages/Program/Program.js';
 import programDetails from './pages/Program/ProgramDetails.js';
 import { store } from './store';
 import info from './pages/Info/Info.js';
+import Conduct from "./pages/Info/Conduct";
 
 const routes = compile({
     '/partners': partners,
@@ -24,6 +25,7 @@ const routes = compile({
     '/speakers/info': speakerinfo,
     '/tickets': tickets,
     '/info': info,
+    '/conduct': Conduct,
     '/program': program,
     '/program/([a-zA-Z0-9_-]+)': programDetails,
     '/': index
