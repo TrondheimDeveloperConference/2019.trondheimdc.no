@@ -1,20 +1,10 @@
 import React from 'react';
-import { Heading, LargeHeading, SmallHeading, Container, Pitch } from '../components/page';
-import { Block, Content, SubHeader, P} from '../components/block';
-import { CLeftBlock, CHeader, CContent } from '../components/centeredblock';
-import { Link } from '../components/link';
+import { CLeftBlock} from '../components/centeredblock';
 import { Section } from '../components/Section/Section';
-import { CenterBlock, LeftBlock, ImageBlock  } from '../components/Block/Block';
-import { Header } from '../components/Header/Header';
+import { LeftBlock} from '../components/Block/Block';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Button from '../components/Button/Button';
 import Page from '../components/Page/Page';
 import PageHeader from '../components/PageHeader/PageHeader';
-import Youtube from '../components/youtube';
-import partners from '../data/partners';
-import partners1 from '../assets/partners_1.jpg';
-import partners2 from '../assets/partners_2.jpg';
-import partners3 from '../assets/partners_3.jpg';
 
 type MonetaryPolicyProps = {
 }
@@ -37,12 +27,12 @@ function MonetaryPolicy(props: MonetaryPolicyProps) {
                             The first thing to note is that you need to <em>apply </em>
                             for reminbursement of costs. This is necessary for our budget planning. If you require
                             financial support, please reach out
-                            to <a href='mailto:refund@java.no'>refund@java.no</a> after
+                            to <a href='mailto:connect@trondheimdc.no'>connect@trondheimdc.no</a> after
                             your session or workshop was accepted.
                         </p>
                         <p>
                             In this mail, provide an estimate of your travel expenses
-                            and the days you will be visiting Oslo during the conference.
+                            and the days you will be visiting Trondheim during the conference.
                         </p>
                         <p>
                             Note that we refund a maximum of 1500 NOK a night for accomodation
@@ -53,13 +43,13 @@ function MonetaryPolicy(props: MonetaryPolicyProps) {
                 <LeftBlock header="Confirmation & reimbursement">
                         <p>
                             Applications <strong><em>must</em></strong> be confirmed explicitly
-                            via <a href='mailto:refund@java.no'>refund@java.no</a> and are
+                            via <a href='mailto:connect@trondheimdc.no'>connect@trondheimdc.no</a> and are
                             only accepted prior to our conference. Reimbursements are
                             provided after the conference. For this, we require you
                             to send us copies of all receipts, the name of your bank
                             and international account numbers (IBAN, BIC/SWIFT, if
                             available). We reserve the right to decline a refund
-                            application. Speakers living in proximity to Oslo are
+                            application. Speakers living in proximity to Trondheim are
                             not eligible.
                         </p>
                         <p>
