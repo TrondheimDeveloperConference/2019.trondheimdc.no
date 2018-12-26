@@ -1,9 +1,7 @@
-import header from '../assets/frivillig.jpg';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Page, Heading, LargeHeading, SmallHeading, Container, Pitch } from '../components/page';
-import { Block, Header, Content, SubHeader, P} from '../components/block';
-import { CBlock, CHeader, CContent } from '../components/centeredblock';
+import { Page, Heading, LargeHeading, SmallHeading, Container} from '../components/page';
+import { Block, Header, Content} from '../components/block';
+import { CBlock, CHeader} from '../components/centeredblock';
 
 import speakers1 from '../assets/speakers_1.jpg';
 import speakers2 from '../assets/speakers_2.jpg';
