@@ -18,4 +18,3 @@ env:
   - GH_USER: TrondheimDeveloperConference
   - GH_REPO_PROD: trondheimdc-2019-prod
   - GH_REPO_TEST: trondheimdc-2019-test
-  - secure: 038de7b8ac42db5b86bf0e706a48de403e1204d9

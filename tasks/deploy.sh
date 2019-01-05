@@ -23,9 +23,9 @@ git config --global user.email "travic@travis-ci.org"
 git config --global user.name "Travis"
 
 if [[ $TRAVIS_BRANCH == "master" ]]; then
-    git clone --quiet https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git javazone > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git javazone > /dev/null
 else
-    git clone --quiet https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git javazone > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git javazone > /dev/null
 fi;
 
 cd javazone
