@@ -28,7 +28,7 @@ else
     git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git 2019.trondheimdc.no > /dev/null
 fi;
 
-cd javazone
+cd 2019.trondheimdc.no
 cp -R $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
