@@ -23,9 +23,9 @@ git config --global user.email "travic@travis-ci.org"
 git config --global user.name "Travis"
 
 if [[ $TRAVIS_BRANCH == "master" ]]; then
-    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git javazone > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git 2019.trondheimdc.no > /dev/null
 else
-    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git javazone > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git 2019.trondheimdc.no > /dev/null
 fi;
 
 cd javazone
@@ -39,10 +39,10 @@ git push -fq origin master > /dev/null
 
 echo "Done deploying"
 
-#if [[ $TRAVIS_BRANCH == "master" ]]; then
-#    curl -X POST --data-urlencode 'payload={"channel": "#javazone-web", "username": "[PROD] Deploy-bot", "text": "http://2018.javazone.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
-#else
-#    curl -X POST --data-urlencode 'payload={"channel": "#javazone-web", "username": "[TEST] Deploy-bot", "text": "http://test-2018.javazone.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
-#fi;
+if [[ $TRAVIS_BRANCH == "master" ]]; then
+    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[PROD] Deploy-bot", "text": "https://2019.trondheimdc.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
+else
+    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[TEST] Deploy-bot", "text": "http://test.trondheimdc.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
+fi;
 
 echo "Done slack-notifying"
