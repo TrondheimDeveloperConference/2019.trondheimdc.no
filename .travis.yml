@@ -17,4 +17,4 @@ env:
   global:
   - GH_USER: TrondheimDeveloperConference
   - GH_REPO_PROD: trondheimdc-2019-prod
-  - GH_REPO_TEST: trondheimdc-2019-test
+  - GH_REPO_TEST: test.trondheimdc.no
