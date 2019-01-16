@@ -6,23 +6,16 @@ import Link from '../Link/Link';
 import './Footer.less';
 
 type FooterProps = {
-    javabinUrl?: string,
     facebookUrl?: string,
     twitterUrl?: string,
     mailUrl?: string,
-    githubUrl?: string,
-    codeOfConduct?: string,
-    cookies?: string
 }
 
 Footer.defaultProps = {
-    javabinUrl: "http://java.no",
-    facebookUrl: "https://www.facebook.com/JavaZoneConference",
-    twitterUrl: "https://twitter.com/javazone",
-    mailUrl: "mailto:javazone@java.no",
-    githubUrl: "https://github.com/javaBin",
-    codeOfConduct: "https://java.no/principles.html#"
-}
+    facebookUrl: "https://www.facebook.com/TDConf",
+    twitterUrl: "https://twitter.com/TrondheimDC",
+    mailUrl: "mailto:connect@trondheimdc.no",
+};
 
 function Footer(props: FooterProps): React.Node {
     return (
@@ -38,18 +31,7 @@ function Footer(props: FooterProps): React.Node {
                         </Col>
                         <Col>
                             <a href={props.mailUrl} target="_blank"><Mail className="social-icon" size="32" /></a>
-                        </Col>{/*
-                        <Col>
-                            <a href={props.githubUrl} target="_blank"><Github className="social-icon" size="32" /></a>
-                        </Col>*/}
-                    </Row>
-                    <Row center="xs" className="info-spacer">
-                        <Col>
-                            <Link href={props.codeOfConduct} className="javabin nav-item draw meet">Code of Conduct</Link>
                         </Col>
-                        {/* <Col>
-                            <Link href={props.cookies} className="javabin nav-item draw meet">Cookies</Link>
-                        </Col> */}
                     </Row>
                 </Col>
             </Row>
