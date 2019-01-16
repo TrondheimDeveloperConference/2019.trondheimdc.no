@@ -41,7 +41,7 @@ const workshops = {
     icon: 'icon-screen-desktop',
     title: 'Workshops',
     length: '2 hours, 4 hours, 8 hours',
-    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 22th and 23th. The format for the workshops is in-depth, hands-on and interactive.'
+    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 29th and 30th. The format for the workshops is in-depth, hands-on and interactive.'
 };
 
 function Speakers(props: SpeakerProps) {
@@ -60,11 +60,11 @@ function Speakers(props: SpeakerProps) {
                     </p>
                     <p>
                         <br />
-                        Our call for speakers is now closed, but you can still see (and edit) the talks you have submitted.
+                        Our call for speakers is already open, so you can submit your proposal!
                     </p>
                     <p>
                     	<br />
-	                    <a className='button button--transparent' href="http://submit.trondheimdc.no">See your submitted sessions</a>
+	                    <a className='button button--green-text' href="http://submitit.trondheimdc.no">Submit a proposal!</a>
 	                </p>
 	            </CenterBlock>
 	        </Section>
@@ -178,7 +178,7 @@ function Speakers(props: SpeakerProps) {
 	            <CenterBlock>
                         <p>
                             <br />
-                            <a className='button button--transparent' href="http://submit.trondheimdc.no">Submit a talk</a>
+                            <a className='button button--transparent' href="http://submitit.trondheimdc.no">Submit a talk</a>
                         </p>
 	            </CenterBlock>
 
