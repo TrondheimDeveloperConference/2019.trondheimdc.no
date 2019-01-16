@@ -43,7 +43,7 @@ function PartnerList(props: PartnerListProps) {
                     )
                 })}
             </Row>
-        </Grid>    
+        </Grid>
     );
 }
 
@@ -55,8 +55,8 @@ function Partners() {
             <Section>
                 <LeftBlock header="Last three years: Completely. Sold. Out.">
                     <p>
-                        Last year, a record-breaking XXXX people attended JavaZone.
-                        This was also the third (???) year where we were completely sold out of both tickets AND partner stands.
+                        Last year, more than 800 people attended Trondheim Developer Conference.
+                        This was also the third year where we were completely sold out of both tickets AND partner stands.
                         Based on this and feedback from last years partners we‘ve got a feeling that we
                         might sell out this year as well. So don‘t wait around if you
                         want to be part of TDC 2019!
@@ -103,7 +103,7 @@ function Partners() {
                             One conference ticket for the stand crew.
                         </li>
                         <li className='list__item'>
-                            Branding on <a href='https://2019.trondheimdc.no'>2019.trondheimdc.no</a>,
+                            Branding on <a href='https://2019.trondheimdc.no/partners'>2019.trondheimdc.no</a>,
                             at the venue, the program, and in other promotional material that
                             we produce.
                         </li>
