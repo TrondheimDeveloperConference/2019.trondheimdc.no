@@ -6,7 +6,6 @@ import { Section } from '../../components/Section/Section';
 import { LeftBlock, CenterBlock, ImageBlock } from '../../components/Block/Block';
 import info1 from '../../assets/info_1.jpg';
 import tickets2 from '../../assets/tickets_2.jpg';
-import partners1 from '../../assets/partners_1.jpg';
 
 function AboutSection() {
     return (
@@ -139,9 +138,9 @@ function Info() {
             <PageHeader subHeader="October 28th, 2019" subSubHeader="Trondheim - Norway">Welcome to TDC 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
-            <ImageBlock image={tickets2} alt="Tickets" />
+            <ImageBlock image={info1} alt="Tickets" />
             <BetterExplorerSection />
-            <ImageBlock image={info1} alt="Info" />
+            <ImageBlock image={tickets2} alt="Info" />
             {/*<ProgramSection />*/}
             <QuestionSection />
         </Page>

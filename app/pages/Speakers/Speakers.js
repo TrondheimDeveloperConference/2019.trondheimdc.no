@@ -1,18 +1,14 @@
 //@flow
 import * as React from 'react';
-import Container from '../../components/Container/Container';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import { CenterBlock, LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Button from '../../components/Button/Button';
 import { Section } from '../../components/Section/Section';
-import { Pitch } from '../../components/page';
 import { Link } from '../../components/link';
 import {Dl, Dt, Dd} from '../../components/definition-list';
 import Timeline from '../../components/timeline';
-import Youtube from '../../components/youtube';
 import speakers1 from '../../assets/speakers_1.jpg';
 import speakers2 from '../../assets/speakers_2.jpg';
 import speakers3 from '../../assets/speakers_3.jpg';
