@@ -12,7 +12,7 @@ function Banner() {
             </div>
 
             <div className="logo-text">
-                <h2>CLARION CONGRESS 21. OCTOBER 2019</h2>
+                <h2>CLARION CONGRESS 28. OCTOBER 2019</h2>
             </div>
         </div>
     );
