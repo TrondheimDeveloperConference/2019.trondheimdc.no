@@ -26,6 +26,7 @@ function Tickets(props: TicketsProps) {
 	                    <P>
                             <a className='button button--transparent' href="https://goo.gl/forms/Eb2aOAjeT3v72iNa2">Add your name to the waiting list</a>
 	                    </P>*/}
+	                    <P>:)</P>
 	            </CenterBlock>
 	        </Section>
 
