@@ -153,7 +153,7 @@ function Speakers(props: SpeakerProps) {
 	            <LeftBlock header="What’s in it for me?">
 	                    <Dl className='speakers__accepted'>
 	                        <Dt className='speakers__accepted-title'>Accepted presentations and workshops</Dt>
-	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on Ocotober 20th.</Dd>
+	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on October 27th.</Dd>
 	                        <Dt className='speakers__accepted-title'>Coverage of Expenses</Dt>
 	                        <Dd className='speakers__accepted-description'>Please see our <Link href='/speakers/monetary-policy'>reimbursement policy</Link> if you have any questions regarding coverage of other expenses.</Dd>
 	                    </Dl>

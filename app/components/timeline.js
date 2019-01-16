@@ -8,27 +8,17 @@ const data = [
         events: [{
             title: 'Call for speakers',
             date: 'February 12th',
-            location: '0px',
+            location: '10px',
             align: 'right'
         }]
     },
     {
         month: 'Mar',
-        events: [{
-            title: 'Speakers workshop',
-            date: 'March 6th',
-            location: '-40px',
-            align: 'left'
-        },]
+        events: []
     },
     {
         month: 'Apr',
-        events: [{
-            title: 'Call for speakers closes',
-            date: 'April 8th',
-            location: '25px',
-            align: 'right'
-        }]
+        events: []
     },
     {
         month: 'May',
@@ -37,9 +27,9 @@ const data = [
     {
         month: 'Jun',
         events: [{
-            title: 'Accepted speakers notified',
-            date: 'By The End of June',
-            location: '60px',
+            title: 'Call for speakers closes',
+            date: 'June 3rd',
+            location: '-10px',
             align: 'left'
         }]
     },
@@ -50,25 +40,34 @@ const data = [
     {
         month: 'Aug',
         events: [{
-            title: 'Presentation workshop',
-            date: 'TBD',
+            title: 'Accepted speakers notified',
+            date: 'By The End middle of august',
             location: '15px',
-            align: 'right'
+            align: 'left'
         }]
     },
     {
-        month: 'Sep',
+        month: 'Sept',
+        events: []
+    },
+    {
+        month: 'Oct',
         events: [
             {
                 title: 'Speakers dinner',
-                date: 'September 11th',
-                location: '-20px',
+                date: 'October 27th',
+                location: '45px',
                 align: 'left'
             }, {
-                title: 'JavaZone 2018!',
-                date: 'September 12th',
-                location: '-10px',
+                title: 'Trondheim Developer Conference 2019!',
+                date: 'October 28th',
+                location: '75px',
                 align: 'right'
+            }, {
+                title: 'Workshops!',
+                date: 'October 29th',
+                location: '105px',
+                align: 'left'
             }
         ]
     }
