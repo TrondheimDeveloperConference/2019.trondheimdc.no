@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import logo from '../assets/logo-horisontal-hvit.svg';
 import { Link } from './link';
 import Footer from './footer';
 import { connect } from 'react-redux';
@@ -83,7 +82,7 @@ export const Page = (props) => {
             <Menu />
             <div className='page__logo-container'>
                 <Link href='/'>
-                    <img src={logo} className='page__logo' />
+                    Hvor vises dette?
                 </Link>
             </div>
             {props.children}
