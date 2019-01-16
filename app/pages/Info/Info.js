@@ -6,14 +6,13 @@ import { Section } from '../../components/Section/Section';
 import { LeftBlock, CenterBlock, ImageBlock } from '../../components/Block/Block';
 import info1 from '../../assets/info_1.jpg';
 import tickets2 from '../../assets/tickets_2.jpg';
-import partners1 from '../../assets/partners_1.jpg';
 
 function AboutSection() {
     return (
         <Section>
             <LeftBlock header="TDC 101 the who, what and where">
                 <p>
-                    Trondheim Developer Conference – A community-driven conference for people in the Trondheim region will be 7
+                    Trondheim Developer Conference – A community-driven conference for people in the Trondheim region will be seven
                     years old in 2019! Don’t miss out on a day of inspiring tech talks,
                     a day of hands-on sessions, mingling, and a great party!
                 </p>
@@ -29,7 +28,8 @@ function AboutSection() {
                 </p>
                 <p>
                     We would not be what we are today without YOU! Thank you for your support and contributions over the years.
-                    Don’t procrastinate! Join your fellow developers at JavaZone on October 21th, 2019!
+                    Don’t procrastinate!
+                    Join your fellow developers at Trondheim Developer Conference on October 28th, 2019!
                 </p>
             </LeftBlock>
         </Section>
@@ -60,22 +60,26 @@ function TicketSection() {
 function BetterExplorerSection() {
     return (
         <Section>
-            <LeftBlock header="Two conference days">
+            <LeftBlock header="A full day of knowledge">
                 <p>
-                    Two days full of talks from renowned Norwegian and international speakers, in varying formats
-                    and categories. You don‘t want to miss our <a href="/program">amazing lineup</a>.
+                    A day full of talks from renowned Norwegian and international speakers, in varying formats
+                    and categories. {/*You don‘t want to miss our <a href="/program">amazing lineup</a>.*/}
                 </p>
             </LeftBlock>
             <LeftBlock header="An after party to remember">
                 <p>
+                    Trondheim Developer Conference's traditional party takes place on the evening after the conference.
                     After a long day of unique learning experiences, it feels good to chill out with some good food and drink.
+                    <br /><br />
+
+                    The party offers a great chance to catch up with old friends, and meet new ones!!
                 </p>
             </LeftBlock>
             <LeftBlock header="Hands-on workshops">
                 <p>
                     Do you prefer practical tasks more than theory? Take part in one of our great workshops and
                     boost your knowledge and skills.
-                    More information, along with registration details will be made available in August.
+                    Workshops will be held after the conference.
                 </p>
             </LeftBlock>
             <LeftBlock header="... and a whole lotta love">
@@ -111,22 +115,6 @@ function ProgramSection() {
     );
 }
 
-function AweZoneSection() {
-    return (
-        <Section>
-            <LeftBlock header="AweZone: Celebrating the community">
-                <p>
-                    Trondheim Developer Conference's traditional party takes place on the evening after the conference.
-                    <br /><br />
-
-                    The party offers a great chance to catch up with old friends, and meet new ones!!
-                    <br /><br />
-                </p>
-            </LeftBlock>
-        </Section>
-    );
-}
-
 function QuestionSection() {
     return (
         <Section>
@@ -147,15 +135,13 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="October 21th, 2019" subSubHeader="Trondheim - Norway">Welcome to TDC 2019</PageHeader>
+            <PageHeader subHeader="October 28th, 2019" subSubHeader="Trondheim - Norway">Welcome to TDC 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
-            <ImageBlock image={tickets2} alt="Tickets" />
+            <ImageBlock image={info1} alt="Tickets" />
             <BetterExplorerSection />
-            <ImageBlock image={info1} alt="Info" />
+            <ImageBlock image={tickets2} alt="Info" />
             {/*<ProgramSection />*/}
-            <ImageBlock image={partners1} alt="Partners" />
-            <AweZoneSection />
             <QuestionSection />
         </Page>
     );

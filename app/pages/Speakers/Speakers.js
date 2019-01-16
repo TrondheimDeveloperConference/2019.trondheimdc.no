@@ -1,18 +1,14 @@
 //@flow
 import * as React from 'react';
-import Container from '../../components/Container/Container';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import { CenterBlock, LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Button from '../../components/Button/Button';
 import { Section } from '../../components/Section/Section';
-import { Pitch } from '../../components/page';
 import { Link } from '../../components/link';
 import {Dl, Dt, Dd} from '../../components/definition-list';
 import Timeline from '../../components/timeline';
-import Youtube from '../../components/youtube';
 import speakers1 from '../../assets/speakers_1.jpg';
 import speakers2 from '../../assets/speakers_2.jpg';
 import speakers3 from '../../assets/speakers_3.jpg';
@@ -41,7 +37,7 @@ const workshops = {
     icon: 'icon-screen-desktop',
     title: 'Workshops',
     length: '2 hours, 4 hours, 8 hours',
-    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 22th and 23th. The format for the workshops is in-depth, hands-on and interactive.'
+    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 29th and 30th. The format for the workshops is in-depth, hands-on and interactive.'
 };
 
 function Speakers(props: SpeakerProps) {
@@ -60,11 +56,11 @@ function Speakers(props: SpeakerProps) {
                     </p>
                     <p>
                         <br />
-                        Our call for speakers is now closed, but you can still see (and edit) the talks you have submitted.
+                        Our call for speakers is already open, so you can submit your proposal!
                     </p>
                     <p>
                     	<br />
-	                    <a className='button button--transparent' href="http://submit.trondheimdc.no">See your submitted sessions</a>
+	                    <a className='button button--green-text' href="http://submitit.trondheimdc.no">Submit a proposal!</a>
 	                </p>
 	            </CenterBlock>
 	        </Section>
@@ -153,7 +149,7 @@ function Speakers(props: SpeakerProps) {
 	            <LeftBlock header="What’s in it for me?">
 	                    <Dl className='speakers__accepted'>
 	                        <Dt className='speakers__accepted-title'>Accepted presentations and workshops</Dt>
-	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on Ocotober 20th.</Dd>
+	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on October 27th.</Dd>
 	                        <Dt className='speakers__accepted-title'>Coverage of Expenses</Dt>
 	                        <Dd className='speakers__accepted-description'>Please see our <Link href='/speakers/monetary-policy'>reimbursement policy</Link> if you have any questions regarding coverage of other expenses.</Dd>
 	                    </Dl>
@@ -178,7 +174,7 @@ function Speakers(props: SpeakerProps) {
 	            <CenterBlock>
                         <p>
                             <br />
-                            <a className='button button--transparent' href="http://submit.trondheimdc.no">Submit a talk</a>
+                            <a className='button button--transparent' href="http://submitit.trondheimdc.no">Submit a talk</a>
                         </p>
 	            </CenterBlock>
 
