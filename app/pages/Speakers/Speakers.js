@@ -47,10 +47,10 @@ function Speakers(props: SpeakerProps) {
             <Section>
 	            <CenterBlock header="About Trondheim Developer Conference">
                     <p>
-                   		TDC 2019 will be the 7th consecutive Trondheim Developer Conference, and will consist of a day of presentations on October 21th and hands on workshops on the following two days.
+                   		TDC 2019 will be the 7th consecutive Trondheim Developer Conference, and will consist of a day of presentations on October 28th and hands on workshops on the following two days.
 					</p>
 					<p>
-                        Last year's event was completely sold out, with more than 700 attendees enjoying XXX sessions.
+                        Last year's event was completely sold out, with more than 700 attendees enjoying more than 30 sessions.
                     </p>
                     <p>TDC hosts both internationals and home-grown Norwegian talent as speakers. We'd love to have you join us in 2019!
                     </p>
