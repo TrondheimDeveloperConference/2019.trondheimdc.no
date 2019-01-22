@@ -36,7 +36,7 @@ const presentations = {
 const workshops = {
     icon: 'icon-screen-desktop',
     title: 'Workshops',
-    length: '2 hours, 4 hours, 8 hours',
+    length: '2 hours, 4 hours, 16 hours',
     description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 29th and 30th. The format for the workshops is in-depth, hands-on and interactive.'
 };
 
