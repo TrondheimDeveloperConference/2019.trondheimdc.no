@@ -16,6 +16,7 @@ fi;
 
 echo "Starting deploy"
 
+cp dist/index.html dist/404.html
 cp -R dist $HOME/dist
 
 cd $HOME
