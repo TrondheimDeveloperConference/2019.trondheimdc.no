@@ -62,8 +62,11 @@ function Startups() {
                         To give as many as possible the opportunity to attend, we prioritise new startups
                         which haven’t had a stand at TDC before.
                     </p>
-
-                    LENKE TIL SKJEMA HER
+                </LeftBlock>
+                <LeftBlock header="Register your interest">
+                    <p>
+                        Fill out <a href='https://docs.google.com/forms/d/e/1FAIpQLSeBCUDDybcNtmS528WcYdBBxkif_iI8nQTZ-BkXb8B6O9tHPQ/viewform?usp=sf_link'>our form</a> or <a href='mailto:connect@trondheimdc.no'>send us an email!</a>
+                    </p>
                 </LeftBlock>
             </Section>
 {/*            <Section alternate pixel>
@@ -71,7 +74,7 @@ function Startups() {
                 <PartnerList partners={partners} />
             </Section>*/}
             <Section fluid>
-                <ImageBlock image={partners2} alt="JavaZone Expo" />
+                <ImageBlock image={partners2} alt="Trondheim Developer Conference Expo" />
             </Section>
         </Page>
     )

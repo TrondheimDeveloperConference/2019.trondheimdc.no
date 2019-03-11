@@ -53,6 +53,12 @@ function Partners() {
             <PageHeader subHeader="Join us in 2019">Dear Trondheim Developer Conference Partners</PageHeader>
 
             <Section>
+
+                <LeftBlock header="Register your interest">
+                    <p>
+                        Fill out <a href='https://docs.google.com/forms/d/e/1FAIpQLSdTF8Enin4i4uo13RINMKXdee7mkjZBG7PpNW5jnzJ7utXexw/viewform?usp=sf_link'>our form</a> or <a href='mailto:connect@trondheimdc.no'>send us an email!</a>
+                    </p>
+                </LeftBlock>
                 <LeftBlock header="Last three years: Completely. Sold. Out.">
                     <p>
                         Last year, more than 800 people attended Trondheim Developer Conference.
