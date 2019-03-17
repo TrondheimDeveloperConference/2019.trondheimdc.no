@@ -4,7 +4,6 @@ import 'whatwg-fetch';
 import 'es6-promise/auto';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import * as polyfill from './components/polyfill';
-import * as favicons from './favicon';
 import { render } from 'react-dom';
 import {Provider} from 'react-redux';
 import { store } from './store.js';
