@@ -4,8 +4,7 @@ import Container from '../../components/Container/Container';
 import { Section } from '../../components/Section/Section';
 import Banner from '../../components/Banner/Banner';
 import Stats from '../../components/Stats/Stats';
-import { LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
+import {CenterBlock} from '../../components/Block/Block';
 import Page from '../../components/Page/Page.js';
 import './Index.less';
 import Meetups from "./Meetups";
@@ -17,8 +16,7 @@ function Index() {
                 <Banner />
             </Container>
             <Section alternate>
-                <Header align="center">This year's event...</Header>
-                <LeftBlock header="TDC 101">
+                <CenterBlock header="This year's event...">
                     <p>
                         Trondheim Developer Conference (TDC) is a community driven event for
                         developers and digital designers.
@@ -47,7 +45,7 @@ function Index() {
                         talks,
                         lively discussions and networking.
                     </p>
-                </LeftBlock>
+                </CenterBlock>
             </Section>
             <Section alternate>
                 <Stats />
