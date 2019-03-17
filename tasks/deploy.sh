@@ -17,7 +17,7 @@ fi;
 echo "Starting deploy"
 
 mkdir -p dist/assets
-cp app/assets/favicons dist/assets/
+cp -r app/assets/favicons dist/assets/
 cp dist/index.html dist/404.html
 cp -R dist $HOME/dist
 
