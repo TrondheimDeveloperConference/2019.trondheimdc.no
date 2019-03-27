@@ -4,9 +4,11 @@
     position: relative;
     overflow: hidden;
     margin-top: @navigation-height;
-    @media only screen and (max-width: @screen-sm) {
-        padding-top: 3rem;
-        background-color: @banner-bg;
+
+    .tdclogo {
+        @media only screen and (max-width: @screen-xs) {
+            display: none;
+        }
     }
 
     .logos {
