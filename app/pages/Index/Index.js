@@ -4,7 +4,7 @@ import Container from '../../components/Container/Container';
 import { Section } from '../../components/Section/Section';
 import Banner from '../../components/Banner/Banner';
 import Stats from '../../components/Stats/Stats';
-import {CenterBlock} from '../../components/Block/Block';
+import {LeftBlock} from '../../components/Block/Block';
 import Page from '../../components/Page/Page.js';
 import './Index.less';
 import Meetups from "./Meetups";
@@ -16,21 +16,14 @@ function Index() {
                 <Banner />
             </Container>
             <Section alternate>
-                <CenterBlock header="This year's event...">
+                <LeftBlock header="Submit your talk now!">
                     <p>
-                        Trondheim Developer Conference (TDC) is a community driven event for
-                        developers and digital designers.
-                    </p>
-                    <Meetups />
-                    <p>
-                        The above communities have joined forces and are giving developers and designers in the greater
-                        Trondheim
-                        region and Norway an arena for learning, networking and communication across all development
-                        disciplines.
+                        Our <a href='https://submitit.trondheimdc.no/'>call for presentations</a> is now open!
+                        We are interested in all topics related to development and IT in general!
                     </p>
 
                     <p>
-                        The agenda consists of multiple tracks for front-end, back-end, agile developers, and digital
+                        The agenda will consists of multiple tracks for front-end, back-end, agile developers, and digital
                         design.
                         The conference strives to reach a balance between local, national and international speakers,
                         and a relatively large share of call-for-presentation submissions.
@@ -45,8 +38,16 @@ function Index() {
                         talks,
                         lively discussions and networking.
                     </p>
-                </CenterBlock>
+                    <Meetups />
+                    <p>
+                        The above communities have joined forces and are giving developers and designers in the greater
+                        Trondheim
+                        region and Norway an arena for learning, networking and communication across all development
+                        disciplines.
+                    </p>
+                </LeftBlock>
             </Section>
+
             <Section alternate>
                 <Stats />
             </Section>
