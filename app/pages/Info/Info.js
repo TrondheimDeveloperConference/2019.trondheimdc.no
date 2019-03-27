@@ -6,6 +6,7 @@ import { Section } from '../../components/Section/Section';
 import { LeftBlock, CenterBlock, ImageBlock } from '../../components/Block/Block';
 import info1 from '../../assets/info_1.jpg';
 import tickets2 from '../../assets/tickets_2.jpg';
+import './Info.less';
 
 function AboutSection() {
     return (
@@ -132,6 +133,37 @@ function QuestionSection() {
 }
 
 
+function OrganiertsSection() {
+    return (
+        <Section>
+            <LeftBlock header="Organizers">
+                <p>
+                    TDC is organized by people from the IT-community in Trondheim, mostly as a cooperation
+                    between the many meetups in the area.
+                </p>
+                <p>
+                    The members of the 2019 Program Committee are:
+                    <ul className="unstyled">
+                        <li>Alexander Samsig (javaBin)</li>
+                        <li>Anders Aabakken (NNUG)</li>
+                        <li>Anders Kringstad (Dataforeningen)</li>
+                        <li>Jacob Berglund (IXDA)</li>
+                        <li>Joar Øyen (NNUG)</li>
+                        <li>Hanne Bårdsen (Dataforeningen)</li>
+                        <li>Ketil Ingebrigtsen (Dataforeningen)</li>
+                        <li>Kristina Brend (Dataforeningen)</li>
+                        <li>Marvin Bredal Lillehaug (javaBin)</li>
+                        <li>Morten Moen (NNUG)</li>
+                        <li>Pål Fossmo (NNUG)</li>
+                        <li>Ronny Anderssen (Spillmakerlauget)</li>
+                        <li>Save Asmervik (Dataforeningen)</li>
+                    </ul>
+                </p>
+            </LeftBlock>
+        </Section>
+    );
+}
+
 function Info() {
     return (
         <Page name='info'>
@@ -143,6 +175,7 @@ function Info() {
             <ImageBlock image={tickets2} alt="Info" />
             {/*<ProgramSection />*/}
             <QuestionSection />
+            <OrganiertsSection />
         </Page>
     );
 }
