@@ -18,7 +18,7 @@ function Index() {
             <Section alternate>
                 <LeftBlock header="Submit your talk now!">
                     <p>
-                        Our <a href='https://submitit.trondheimdc.no/'>call for presentations</a> is now open!
+                        Our <a href='https://submitit.trondheimdc.no/'>call for presentations</a> is open until June 3. 23:59:59!
                         We are interested in all topics related to development and IT in general!
                     </p>
 
