@@ -56,7 +56,7 @@ function Speakers(props: SpeakerProps) {
                     </p>
                     <p>
                         <br />
-                        Our call for speakers is already open, so you can submit your proposal!
+                        Our call for speakers is already open, so you can submit your proposal! The deadline for submission is June 3. 23:59:59!
                     </p>
                     <p>
                     	<br />
