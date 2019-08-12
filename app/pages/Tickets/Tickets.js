@@ -28,7 +28,7 @@ function Tickets(props: TicketsProps) {
 	            <CenterBlock header="Need more info about Trondheim Developer Conference?">
                     <P>
                         <br />
-                        We'll release more information about the conference before the summer,
+                        We'll release more information about the conference continually,
                         and the detailed program with information about all the talks will be ready in September.
                     </P>
                     <P>
