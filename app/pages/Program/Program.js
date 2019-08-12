@@ -125,13 +125,13 @@ type DayProps = {
     addToFav: (session) => {};
 }
 
-function Wednesday(props: DayProps) {
-    const filteredList = props.sessions.filter(session => session.startTime.startsWith('2018-09-12'));
+function Tuesday(props: DayProps) {
+    const filteredList = props.sessions.filter(session => session.startTime && session.startTime.startsWith('2019-10-29'));
     const timeSlots = groupByTimeSlot(filteredList);
     return (
         filteredList.length > 0 ?
         <div>
-            <h1 className="program-day-header">Wednesday</h1>
+            <h1 className="program-day-header">Tuesday</h1>
             {Object.keys(timeSlots).map((timeSlot, idx) => {
                 return <div key={timeSlot + idx}>
                     <h1 className="program-day-timeslot">{timeSlot.substr(-5)}</h1>
@@ -144,8 +144,8 @@ function Wednesday(props: DayProps) {
     );
 }
 
-function Thursday(props: DayProps) {
-    const filteredList = props.sessions.filter(session => session.startTime.startsWith('2018-09-13'));
+function Wednesday(props: DayProps) {
+    const filteredList = props.sessions.filter(session => session.startTime && session.startTime.startsWith('2019-10-30'));
     const timeSlots = groupByTimeSlot(filteredList);
     return (
         filteredList.length > 0 ?
@@ -163,13 +163,13 @@ function Thursday(props: DayProps) {
     );
 }
 
-function Tuesday(props: DayProps) {
-    const filteredList = props.sessions.filter(session => session.startTime.startsWith('2018-09-11'));
+function Monday(props: DayProps) {
+    const filteredList = props.sessions.filter(session => session.startTime && session.startTime.startsWith('2019-10-28'));
     const timeSlots = groupByTimeSlot(filteredList);
     return (
         filteredList.length > 0 ?
         <div>
-            <h1 className="program-day-header">Tuesday</h1>
+            <h1 className="program-day-header">Conference</h1>
             {Object.keys(timeSlots).map((timeSlot, idx) => {
                 return <div key={timeSlot + idx}>
                     <h1 className="program-day-timeslot">{timeSlot.substr(-5)}</h1>
@@ -179,6 +179,21 @@ function Tuesday(props: DayProps) {
                 </div>
             })}
         </div> : null
+    );
+}
+
+function Unknown(props: DayProps) {
+    const filteredList = props.sessions.filter(session => !session.startTime);
+    return (
+        filteredList.length > 0 ?
+            <div>
+                <h1 className="program-day-header">Our talks!</h1>
+                <div>
+                    {filteredList.map((session, idx) => {
+                        return <SessionItem favorites={props.favorites} addToFav={props.addToFav} key={session.sessionId} session={session} />
+                    })}
+                </div>
+            </div> : null
     );
 }
 
@@ -198,9 +213,10 @@ function SimpleSessionList(props: SimpleSessionListProps) {
     }
     return (
         <div className="program-list">
+            <Unknown favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
+            <Monday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
             <Tuesday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
             <Wednesday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
-            <Thursday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
         </div>
     );
 };
@@ -216,9 +232,8 @@ function Filter(sessions, state, props, addToFav, toggleFavorite, setAll, setPre
                                 <div className="program-filter-spacing">
                                     <div className='program-filter-header'>Day</div>
                                     <div className='program-filter-button-group'>
-                                        <button className={`program-filter-button ${props.day === 'tue' ? 'enabled' : ''}`} onClick={toggleTue}>Tuesday</button>
-                                        <button className={`program-filter-button ${props.day === 'wed' ? 'enabled' : ''}`} onClick={toggleWed}>Wednesday</button>
-                                        <button className={`program-filter-button ${props.day === 'thu' ? 'enabled' : ''}`} onClick={toggleThu}>Thursday</button>
+                                        <button className={`program-filter-button ${props.day === 'mon' ? 'enabled' : ''}`} onClick={toggleTue}>Conference</button>
+                                        <button className={`program-filter-button ${props.day === 'tue' ? 'enabled' : ''}`} onClick={toggleWed}>Workshops</button>
                                     </div>
                                 </div>
                             </Col>
@@ -323,12 +338,12 @@ class Program extends React.Component<ProgramProps, ProgramState> {
     updateFilteredSessions() {
         let updatedFilter = [...this.props.sessions];
         if (this.props.day !== '') {
-            if (this.props.day === 'wed') {
-                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2018-09-12'));
-            } else if (this.props.day === 'thu') {
-                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2018-09-13'));
+            if (this.props.day === 'tue') {
+                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2019-10-29'));
+            } else if (this.props.day === 'wed') {
+                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2019-10-30'));
             } else {
-                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2018-09-11'));
+                updatedFilter = updatedFilter.filter(session => session.startTime.startsWith('2019-10-28'));
             }
         }
         if (this.props.language !== '') {
@@ -355,15 +370,15 @@ class Program extends React.Component<ProgramProps, ProgramState> {
     }
 
     toggleTue() {
-        this.props.setDay(this.props.day === 'tue' ? '' : 'tue');
+        this.props.setDay(this.props.day === 'mon' ? '' : 'mon');
     }
 
     toggleWed() {
-        this.props.setDay(this.props.day === 'wed' ? '' : 'wed');
+        this.props.setDay(this.props.day === 'tue' ? '' : 'tue');
     }
 
     toggleThu() {
-        this.props.setDay(this.props.day === 'thu' ? '' : 'thu');
+        this.props.setDay(this.props.day === 'wed' ? '' : 'wed');
     }
 
     setAll() {

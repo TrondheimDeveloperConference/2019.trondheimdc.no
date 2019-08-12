@@ -15,18 +15,10 @@ type TicketsProps = {
 function Tickets(props: TicketsProps) {
     return (
         <Page name='tickets'>
-	        <PageHeader subHeader="Come join us in Trondheim, October 28th">Tickets to TDC 2018</PageHeader>
+	        <PageHeader subHeader="Come join us in Trondheim, October 28th">Tickets to TDC 2019</PageHeader>
 	        <Section>
-                <CenterBlock header="We have not opened ticket sales yet :(">
-	                   {/* <div className="partner-prices-main sold-out-text">NOK 3.500,-</div>*/}
-	                    {/*<P>
-	                        The ticket includes full access to the conference <br />
-	                        <span className="partners__vat">prices ex VAT</span>
-	                    </P>*/}{/*
-	                    <P>
-                            <a className='button button--transparent' href="https://goo.gl/forms/Eb2aOAjeT3v72iNa2">Add your name to the waiting list</a>
-	                    </P>*/}
-	                    <P>:)</P>
+                <CenterBlock header="Get your tickets!">
+                    <P><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets are available</a></P>
 	            </CenterBlock>
 	        </Section>
 
@@ -36,7 +28,7 @@ function Tickets(props: TicketsProps) {
 	            <CenterBlock header="Need more info about Trondheim Developer Conference?">
                     <P>
                         <br />
-                        We'll release more information about the conference before the summer,
+                        We'll release more information about the conference continually,
                         and the detailed program with information about all the talks will be ready in September.
                     </P>
                     <P>
