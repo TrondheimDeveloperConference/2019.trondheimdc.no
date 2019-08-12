@@ -56,12 +56,8 @@ function Speakers(props: SpeakerProps) {
                     </p>
                     <p>
                         <br />
-                        Our call for speakers is already open, so you can submit your proposal! The deadline for submission is June 3. 23:59:59!
+                        Our call for speakers for 2019 is closed, and the speakers are chosen! Check back in April 2020 to submit a proposal for TDC 2020§
                     </p>
-                    <p>
-                    	<br />
-	                    <a className='button button--green-text' href="http://submitit.trondheimdc.no">Submit a proposal!</a>
-	                </p>
 	            </CenterBlock>
 	        </Section>
 

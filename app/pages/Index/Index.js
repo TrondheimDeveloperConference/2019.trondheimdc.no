@@ -16,10 +16,10 @@ function Index() {
                 <Banner />
             </Container>
             <Section alternate>
-                <LeftBlock header="Submit your talk now!">
+                <LeftBlock header="Not long now!">
+                    <h2>This years program</h2>
                     <p>
-                        Our <a href='https://submitit.trondheimdc.no/'>call for presentations</a> is open until June 3. 23:59:59!
-                        We are interested in all topics related to development and IT in general!
+                        We have started preparing this years program! It will soon be available!
                     </p>
 
                     <p>
@@ -29,6 +29,14 @@ function Index() {
                         and a relatively large share of call-for-presentation submissions.
                     </p>
 
+                    <h2>Tickets</h2>
+                    <p><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets are available!</a></p>
+                    <p>
+                        There are two kinds of tickets. The main one is for the conference, and then there are tickets
+                        that bundle a workshop and entrance to the conference. These workshops are in collaboration with <a href='https://programutvikling.no'>Programutvikling</a>.
+                    </p>
+
+                    <h2>What is TDC?</h2>
                     <p>
                         TDC is a noncommercial event where all profit goes towards next year's conference
                         and other community events throughout the year in Trondheim.
