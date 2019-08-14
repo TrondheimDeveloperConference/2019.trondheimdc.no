@@ -188,6 +188,7 @@ function Unknown(props: DayProps) {
         filteredList.length > 0 ?
             <div>
                 <h1 className="program-day-header">Our talks!</h1>
+                <p>not everyone has confirmed their talks, more will appear shortly :)</p>
                 <div>
                     {filteredList.map((session, idx) => {
                         return <SessionItem favorites={props.favorites} addToFav={props.addToFav} key={session.sessionId} session={session} />
@@ -252,7 +253,6 @@ function Filter(sessions, state, props, addToFav, toggleFavorite, setAll, setPre
                             <div className='program-filter-button-group'>
                                 <button className={`program-filter-button ${props.show === 'all' ? 'enabled' : ''}`} onClick={setAll}>All ({sessions.length})</button>
                                 <button className={`program-filter-button ${props.show === 'presentation' ? 'enabled' : ''}`} onClick={setPresentation}>Presentations ({sessions.filter(session => session.format === 'presentation').length})</button>
-                                <button className={`program-filter-button ${props.show === 'lightning-talk' ? 'enabled' : ''}`} onClick={setLightningTalk}>Lightning Talks ({sessions.filter(session => session.format === 'lightning-talk').length})</button>
                                 <button className={`program-filter-button ${props.show === 'workshop' ? 'enabled' : ''}`} onClick={setWorkshop}>Workshops ({sessions.filter(session => session.format === 'workshop').length})</button>
                                 <button className={`program-filter-button ${props.show === 'fav' ? 'enabled' : ''}`} onClick={toggleFavorite}>My Favorites ({state.favorites.length})</button>
                             </div>
