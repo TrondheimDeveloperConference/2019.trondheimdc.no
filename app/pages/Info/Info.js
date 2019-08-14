@@ -147,9 +147,8 @@ function OrganiertsSection() {
                         <li>Alexander Samsig (javaBin)</li>
                         <li>Anders Aabakken (NNUG)</li>
                         <li>Anders Kringstad (Dataforeningen)</li>
-                        <li>Jacob Berglund (IXDA)</li>
-                        <li>Joar Øyen (NNUG)</li>
                         <li>Hanne Bårdsen (Dataforeningen)</li>
+                        <li>Iver Jordal (Trondheim Machine Learning)</li>
                         <li>Ketil Ingebrigtsen (Dataforeningen)</li>
                         <li>Kristina Brend (Dataforeningen)</li>
                         <li>Marvin Bredal Lillehaug (javaBin)</li>
@@ -157,6 +156,7 @@ function OrganiertsSection() {
                         <li>Pål Fossmo (NNUG)</li>
                         <li>Ronny Anderssen (Spillmakerlauget)</li>
                         <li>Save Asmervik (Dataforeningen)</li>
+                        <li>Tina Haaskjold Behrens (IXDA)</li>
                     </ul>
                 </p>
             </LeftBlock>
