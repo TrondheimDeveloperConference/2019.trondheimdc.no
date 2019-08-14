@@ -29,7 +29,7 @@ export default [
     {name: 'ITsjefen', logo: 'itsjefen.png', url: 'https://itsjefen.no'},
     // {name: 'JPro', logo: 'jpro.svg', url: 'http://www.jpro.no/'},
     // {name: 'Kantega', logo: 'kantega.svg', url: 'http://www.kantega.no/'},
-    {name: 'Knowit', logo: 'knowit.svg', url: 'http://www.knowit.no/'},
+    {name: 'Knowit', logo: 'knowit.svg', url: 'https://www.knowit.no/'},
     // {name: 'Kodemaker', logo: 'kodemaker.svg', url: 'http://www.kodemaker.no/'},
     // {name: 'Microsoft', logo: 'microsoft.svg', url: 'http://www.microsoft.com/nb-no'},
     // {name: 'Miles', logo: 'miles.svg', url: 'http://www.miles.no/'},
