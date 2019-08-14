@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
+import partners from '../../data/partners';
 import partners1 from '../../assets/partners_1.jpg';
 import partners2 from '../../assets/partners_2.jpg';
 import { CenterBlock, ImageBlock, LeftBlock } from '../../components/Block/Block';
@@ -15,7 +16,7 @@ function shuffle(o){
     return o;
 }
 
-const imagesContext = require.context('../../assets/partners-18', false, /\.svg$/);
+const imagesContext = require.context('../../assets/2019/partners', false);
 const images = imagesContext.keys().map(image => (
     {context: imagesContext(image), filename: image}
 ));
@@ -35,7 +36,7 @@ function PartnerList(props: PartnerListProps) {
             <Row className="partners-list-container">
                 {shuffled.map((partner) => {
                     return (
-                        <Col key={partner.name}>
+                        <Col key={partner.name} className="partner">
                             <Link href={partner.url} className="partners-list-item">
                                 <img className="partner-logo" src={getimage(images, partner.logo).context} alt={partner.name}/>
                             </Link>
@@ -78,12 +79,13 @@ function Partners() {
                     </p>
                 </LeftBlock>
             </Section>
-{/*            <Section alternate pixel>
-                <Header align='center'>Partners</Header>
-                <PartnerList partners={partners} />
-            </Section>*/}
+            <Section alternate pixel>
+                <CenterBlock header="Partners">
+                    <PartnerList partners={partners} />
+                </CenterBlock>
+            </Section>
             <Section fluid>
-                <ImageBlock image={partners2} alt="JavaZone Expo" />
+                <ImageBlock image={partners2} alt="TDC Expo" />
             </Section>
             <Section>
                 <CenterBlock header="The expo area">
@@ -117,7 +119,7 @@ function Partners() {
                 </LeftBlock>
             </Section>
             <Section fluid>
-                <ImageBlock image={partners1} alt="JavaZone Expo" />
+                <ImageBlock image={partners1} alt="TDC Expo" />
             </Section>
             <Section>
                 <CenterBlock header="Contact Us">
