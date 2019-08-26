@@ -234,7 +234,7 @@ function Filter(sessions, state, props, addToFav, toggleFavorite, setAll, setPre
                                     <div className='program-filter-header'>Day</div>
                                     <div className='program-filter-button-group'>
                                         <button className={`program-filter-button ${props.day === 'mon' ? 'enabled' : ''}`} onClick={toggleTue}>Conference</button>
-                                        <button className={`program-filter-button ${props.day === 'tue' ? 'enabled' : ''}`} onClick={toggleWed}>Workshops</button>
+                                        <button className={`program-filter-button ${props.day === 'tue' ? 'enabled' : ''}`} onClick={toggleWed}>Post conference Workshops</button>
                                     </div>
                                 </div>
                             </Col>
