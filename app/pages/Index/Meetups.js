@@ -12,7 +12,7 @@ export default function Meetups() {
         <ul className="c-meetups unstyled">
             <li className="c-meetups__meetup">
                 <a title="Dataforeningen Trøndelag"
-                    href="http://www.dataforeningen.no/om-dataforeningen-troendelag.4818801-134401.html">
+                    href="https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim">
                     <img src={dataforeningen} alt='Dataforeningen Trøndelag'/>
                 </a>
             </li>
@@ -32,7 +32,7 @@ export default function Meetups() {
                 </a>
             </li>
             <li className="c-meetups__meetup">
-                <a title="Spillmakerlauget" href="http://trondheim.spillmakerlauget.no/">
+                <a title="Spillmakerlauget" href="https://spillmakerlauget.no/">
                     <img src={spillmakerlauget} alt='Spillamkerlauget'/>
                 </a>
             </li>
