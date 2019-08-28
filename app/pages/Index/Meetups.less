@@ -5,11 +5,19 @@
 
   justify-content: space-between;
   display: flex;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: inline-block;
+    text-align: center;
+  }
 
   .c-meetups__meetup {
     fill: @green;
     padding: 1%;
     width: 33%;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      display: inline-block;
+    }
 
     &:hover {
       fill: white;
@@ -17,6 +25,7 @@
 
     img {
       width: 100px;
+      height: 100px;
     }
   }
 }
