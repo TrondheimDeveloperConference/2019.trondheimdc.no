@@ -33,7 +33,7 @@ function Index() {
                     <p><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets are available!</a></p>
                     <p>
                         There are two kinds of tickets. The main one is for the conference, and then there are tickets
-                        that bundle a workshop and entrance to the conference. These workshops are in collaboration with <a href='https://programutvikling.no'>Programutvikling</a>.
+                        that bundle a workshop and entrance to the conference. 
                     </p>
 
                     <h2>What is TDC?</h2>
