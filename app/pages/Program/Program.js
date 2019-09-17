@@ -131,7 +131,7 @@ function Tuesday(props: DayProps) {
     return (
         filteredList.length > 0 ?
         <div>
-            <h1 className="program-day-header">Tuesday</h1>
+            <h1 className="program-day-header">Tuesday and wednesday</h1>
             {Object.keys(timeSlots).map((timeSlot, idx) => {
                 return <div key={timeSlot + idx}>
                     <h1 className="program-day-timeslot">{timeSlot.substr(-5)}</h1>
