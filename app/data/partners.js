@@ -22,6 +22,7 @@ export default [
     // {name: 'Eika', logo: 'eika.svg', url: 'https://www2.eika.no'},
     // {name: 'Finn', logo: 'finn.svg', url: 'http://finn.no/'},
     // {name: 'Gjensidige', logo: 'gjensidige.svg', url: 'https://gjensidige.no/'},
+    {name: 'Glasspaper', logo: 'glasspaper_orig.png', url: 'https://www.glasspaper.no'},
     // {name: 'Greenbird', logo: 'greenbird.svg', url: 'http://greenbird.no/'},
     // {name: 'IBM', logo: 'ibm.svg', url: 'https://www.ibm.com/cloud-computing/no/no/platform/bluemix.html'},
     // {name: 'Inmeta', logo: 'inmeta.svg', url: 'http://www.inmeta.no/'},
