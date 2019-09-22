@@ -19,7 +19,7 @@ function Index() {
                 <LeftBlock header="Not long now!">
                     <h2>This years program</h2>
                     <p>
-                        We have started preparing this years program! It will soon be available!
+                        This years <a href='https://2019.trondheimdc.no/program'>program is available!</a>
                     </p>
 
                     <p>
@@ -33,7 +33,7 @@ function Index() {
                     <p><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets are available!</a></p>
                     <p>
                         There are two kinds of tickets. The main one is for the conference, and then there are tickets
-                        that bundle a workshop and entrance to the conference. 
+                        that bundle a workshop and entrance to the conference.
                     </p>
 
                     <h2>What is TDC?</h2>
