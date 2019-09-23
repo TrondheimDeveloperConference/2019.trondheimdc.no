@@ -17,9 +17,9 @@ function Index() {
             </Container>
             <Section alternate>
                 <LeftBlock header="Not long now!">
-                    <h2>This years program</h2>
+                    <h2>This year's program</h2>
                     <p>
-                        This years <a href='https://2019.trondheimdc.no/program'>program is available!</a>
+                        This year's <a href='https://2019.trondheimdc.no/program'>program is available!</a>
                     </p>
 
                     <p>

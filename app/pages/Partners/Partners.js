@@ -64,7 +64,7 @@ function Partners() {
                     <p>
                         Last year, more than 800 people attended Trondheim Developer Conference.
                         This was also the third year where we were completely sold out of both tickets AND partner stands.
-                        Based on this and feedback from last years partners we‘ve got a feeling that we
+                        Based on this and feedback from last year's partners we‘ve got a feeling that we
                         might sell out this year as well. So don‘t wait around if you
                         want to be part of TDC 2019!
                     </p>
