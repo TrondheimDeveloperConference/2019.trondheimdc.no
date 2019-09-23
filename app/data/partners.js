@@ -17,7 +17,7 @@ export default [
     // {name: 'DFind IT', logo: 'dfind.svg', url: 'https://www.dfind.no/'},
     // {name: 'Driw', logo: 'driw.svg', url: 'http://www.driw.no'},
     // {name: 'EVRY', logo: 'evry.svg', url: 'https://www.evry.no/'},
-    {name: 'Enevo', logo: 'enevo.png', url: 'https://www.Enevo.no/'},
+    {name: 'FjelltopMedia', logo: 'fjelltopmedia.png', url: 'https://fjelltoppmedia.no'},
     {name: 'Equinor', logo: 'equinor.svg', url: 'https://www.equinor.com/'},
     // {name: 'Eika', logo: 'eika.svg', url: 'https://www2.eika.no'},
     // {name: 'Finn', logo: 'finn.svg', url: 'http://finn.no/'},
