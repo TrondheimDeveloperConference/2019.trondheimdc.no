@@ -62,13 +62,13 @@ export default () => (
                 <li className='frivillig__question'>
                     <div className='frivillig__header blue'>Speakers Dinner</div>
                     <div className='frivillig__answer'>
-                        This years speakers dinner will be held at <a href='http://www.restaurantpaleet.no'>Paleet</a> (located at <a href={paleet}>Karl Johans gate 37</a>), on Tuesday September 12th, starting at 19:00. After the tour we’ll head straight for the Speakers Dinner, which is located less than 15 minutes walk from the JavaZone venue. If you don’t want to attend the guided tour, it is perfectly ok to show up at Paleet from 19:00 onwards. And it’s no problem if you are a little late.
+                        This year's speakers dinner will be held at <a href='http://www.restaurantpaleet.no'>Paleet</a> (located at <a href={paleet}>Karl Johans gate 37</a>), on Tuesday September 12th, starting at 19:00. After the tour we’ll head straight for the Speakers Dinner, which is located less than 15 minutes walk from the JavaZone venue. If you don’t want to attend the guided tour, it is perfectly ok to show up at Paleet from 19:00 onwards. And it’s no problem if you are a little late.
                     </div>
                 </li>
                 <li className='frivillig__question'>
                     <div className='frivillig__header orange'>Cost Coverage</div>
                     <div className='frivillig__answer'>
-                        If you sucessfully applied for cost coverage, please <a href="mailto:program@java.no">send us</a> a copy of your receipts <b>after</b> the conference. If we agreed upon covering your expenses we have reserved a room at <a href="http://www.thonhotels.com/de/hotels/lander/norwegen/oslo/thon-hotel-terminus/">Thon Hotel Terminus</a> on your name. The room is prepaid, simply arrive at the hotel and check-in before the conference.
+                        If you successfully applied for cost coverage, please <a href="mailto:program@java.no">send us</a> a copy of your receipts <b>after</b> the conference. If we agreed upon covering your expenses we have reserved a room at <a href="http://www.thonhotels.com/de/hotels/lander/norwegen/oslo/thon-hotel-terminus/">Thon Hotel Terminus</a> on your name. The room is prepaid, simply arrive at the hotel and check-in before the conference.
                     </div>
                 </li>
                 <li className='frivillig__question'>
