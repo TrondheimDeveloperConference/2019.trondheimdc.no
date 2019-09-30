@@ -1,11 +1,11 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" x="0px"
-     y="0px" viewBox="0 0 300.9 140" xml:space="preserve" class="logo-img" role="img" aria-label="CGI official logo"     >
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+     width="200"
+     height="60"
+     viewBox="0 0 300 140" xml:space="preserve" class="logo-img" role="img" aria-label="CGI official logo">
                 <style type="text/css">
-                    .st0{fill:#fff;
-                    padding: 0 23px;
-    height: 46px;
-    width: 100px;}
-
+                    .st0{
+                    fill:#fff;
+                    }
                 </style>
     <g id="Layer_1">
                     <g>
