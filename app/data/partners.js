@@ -50,7 +50,7 @@ export default [
     {name: 'Signicat', logo: 'signicat.svg', url: 'http://www.signicat.no/'},
     // {name: 'Sopra Steria', logo: 'soprasteria.svg', url: 'http://www.soprasteria.no/'},
     // {name: 'Sparebank 1', logo: 'sparebank1.svg', url: 'https://www.sparebank1.no/bank/privat.html'},
-    // {name: 'Sportradar', logo: 'sportradar.svg', url: 'https://www.sportradar.com/'},
+    {name: 'Sportradar', logo: 'sportradar.png', url: 'https://www.sportradar.com/'},
     {name: 'Sticos', logo: 'sticos.png', url: 'https://www.sticos.no'},
     // {name: 'Syse', logo: 'syse.svg', url: 'https://www.syse.no/'},
     // {name: 'Systek', logo: 'systek.svg', url: 'http://www.systek.no/'},
