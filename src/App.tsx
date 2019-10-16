@@ -14,6 +14,7 @@ import email from './media/img/icons/email.svg';
 import Root from "./Root";
 import Partners from "./Partners";
 import Startups from "./Startups";
+import CoC from "./CodeOfConduct";
 
 const App: React.FC = () => {
   return (
@@ -38,7 +39,7 @@ const App: React.FC = () => {
               <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} alt=''/></Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/partners">partners</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/startups">startups</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/code">code of conduct</Link></li>
+              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/conduct">code of conduct</Link></li>
             </ul>
           </div>
         </nav>
@@ -52,6 +53,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/startups">
             <Startups />
+          </Route>
+          <Route exact path="/conduct">
+            <CoC />
           </Route>
         </Switch>
 

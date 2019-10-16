@@ -10,7 +10,7 @@ const CoC = () => {
 
             <div className="container text-left d-md-flex flex-md-equal">
                 <div className="overflow-hidden">
-                    <img src={code_jumbotron} className="img-fluid" />
+                    <img src={code_jumbotron} className="img-fluid" alt='' />
                 </div>
             </div>
         </section>
@@ -19,7 +19,7 @@ const CoC = () => {
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
                         <h2 className="text-right pr-5 pt-4 text-white">Code of Conduct</h2>
-                        <img src={bg2} className="img-fluid pr-5 pt-3 float-right" width="30%" />
+                        <img src={bg2} className="img-fluid pr-5 pt-3 float-right" width="30%" alt='' />
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
                         <p>All attendees, speakers, partners, staff and volunteers at our conference are required to follow
@@ -65,7 +65,7 @@ const CoC = () => {
 
             <div className="container-fluid p-0 m-0">
                 <div className="d-md-flex flex-md-equal">
-                    <img src={coc_background} className="img-fluid" />
+                    <img src={coc_background} className="img-fluid" alt='' />
                 </div>
             </div>
         </div>
