@@ -185,6 +185,36 @@ const Partners = () => {
                     <img src={partner_background} className="img-fluid" alt=''/>
                 </div>
             </div>
+
+            <div className="container first mb-5">
+                <div className="d-md-flex flex-md-equal">
+                    <div className="col-md-6">
+                        <h2 className="text-right pr-5 pt-4 text-white">The expo area</h2>
+                    </div>
+                    <div className="col-md-6 text-left text-white mt-4">
+                        <p>All our partner stands are traditionally located in the expo area, which is centrally located in the venue. During each break, the Expo is full of attendees.</p>
+                    </div>
+                </div>
+                <div className="d-md-flex flex-md-equal">
+                    <div className="col-md-6">
+                        <h2 className="text-right pr-5 pt-4 text-white">Partner options</h2>
+                    </div>
+                    <div className="col-md-6 text-left text-white mt-4">
+                        <p>All partners are considered equal. Because of the conference venue, Clarion Congress, we don't have that much of an possibility for expansions.</p>
+                    </div>
+                </div>
+                <div className="d-md-flex flex-md-equal">
+                    <div className="col-md-6">
+                        <h2 className="text-right pr-5 pt-4 text-white">Included in all partnerships</h2>
+                    </div>
+                    <div className="col-md-6 text-left text-white mt-4">
+                        <p>
+                            A stand in the Expo Area (6 square meters, 2m x 3m).One conference ticket for the stand crew.
+                            Branding on 2019.trondheimdc.no, at the venue, the program, and in other promotional material that we produce.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </>;
 };
