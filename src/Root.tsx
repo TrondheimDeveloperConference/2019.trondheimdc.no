@@ -2,9 +2,13 @@ import React from 'react';
 
 import tdc_jumbotron from './media/img/jumbotron/tdc_jumbotron.png';
 import index01 from './media/img/index/index_01.jpg';
-import index02 from './media/img/index/index_02.jpg';
 import index03 from './media/img/index/index_03.jpg';
 import index04 from './media/img/index/index_04.png';
+import dataforeningen from './media/img/index/dataforeningen.svg';
+import ixda from './media/img/index/ixda.svg';
+import javabin from './media/img/index/javabin.svg';
+import nnug from './media/img/index/nnug.svg';
+import spillmakerlauget from './media/img/index/spillmakerlauget.svg';
 
 const Root: React.FC = () => {
     return <>
@@ -12,7 +16,7 @@ const Root: React.FC = () => {
 
             <div className="container text-left d-md-flex flex-md-equal">
                 <div className="overflow-hidden">
-                    <img src={tdc_jumbotron} className="img-fluid" />
+                    <img src={tdc_jumbotron} className="img-fluid" alt='' />
                 </div>
             </div>
         </section>
@@ -21,7 +25,7 @@ const Root: React.FC = () => {
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
                         <h5 className="text-left text-white">Call for speakers</h5>
-                        <img src={index04} className="img-fluid" />
+                        <img src={index04} className="img-fluid" alt='' />
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
                         <h1>Submit your talk now</h1>
@@ -34,7 +38,7 @@ const Root: React.FC = () => {
             <div className="container-fluid second p-0 m-0">
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6 p-0 m-0">
-                        <img src={index01} className="img-fluid mb-5" width="80%" />
+                        <img src={index01} className="img-fluid mb-5 border-bottom-right" width="80%" alt=''/>
                     </div>
                     <div className="col-md-4 text-left text-white mt-0">
                         <p>The agenda will consists of multiple tracks for front-end, back-end, agile developers, and
@@ -45,11 +49,26 @@ const Root: React.FC = () => {
                         <p>TDC is a noncommercial event where all profit goes towards next years conference and other
                             community events throughtout the year in Trondheim</p>
 
-                        <img src={index02} className="mt-5 mb-5 img-fluid" />
+                        <a href="https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim">
+                            <img src={dataforeningen} className="img-fluid" width="15%" alt='Dataforeningen'/>
+                        </a>
+                        <a href="http://www.meetup.com/IXDATrondheim/">
+                            <img src={ixda} className="img-fluid" width="18%" alt='IXDA'/></a>
+                        <a href="http://www.meetup.com/javaBin-Trondheim/">
+                            <img src={javabin} className="img-fluid" width="22%" alt='javaBin'/>
+                        </a>
+                        <a href="http://www.meetup.com/nnug-trondheim/">
+                            <img src={nnug} className="img-fluid" width="20%" alt='NNUG'/>
+                        </a>
+                        <a href="https://spillmakerlauget.no/">
+                            <img src={spillmakerlauget} className="img-fluid" width="20%" alt='Spillmakerlauget' />
+                        </a>
 
-                            <p>The above communitites have joined forces and are giving developers and designers in the
-                                greater Trondheim region and Norway an arena for learning, networking and communication
-                                across all development disciplines.</p>
+                        <p className="mt-4">
+                            The above communitites have joined forces and are giving developers and designers in
+                            the greater Trondheim region and Norway an arena for learning, networking and communication across all development disciplines.
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -69,7 +88,7 @@ const Root: React.FC = () => {
                                 share knowledge, and socialize.</p>
                         </div>
                         <div className="col-md-6 ">
-                            <img src={index03} className="img-fluid img" />
+                            <img src={index03} className="img-fluid img" alt='' />
                         </div>
                     </div>
                 </div>

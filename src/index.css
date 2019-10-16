@@ -51,7 +51,7 @@ h5 {
   min-height: 350px;
 }
 
-#index .second img {
+#index .second .border-bottom-right {
   border-radius: 0 0 150px 0;
   width: 90%;
 }

@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <Router>
         <body>
         <nav className="navbar sticky-top navbar-opacity navbar-expand-lg navbar-dark text-center mx-auto py-3">
-          <a className="navbar-brand d-block d-sm-none" href="/"><img src={tdc_menu} /></a>
+          <a className="navbar-brand d-block d-sm-none" href="/"><img src={tdc_menu} alt=''/></a>
           <button className="navbar-toggler"
                   type="button"
                   data-toggle="collapse"
@@ -30,12 +30,12 @@ const App: React.FC = () => {
           </button>
 
           <div className="collapse navbar-collapse mx-auto justify-content-md-center" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav tdc-nav">
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/info">info</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/tickets">tickets</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/programme">programme</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/speakers">speakers</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} /></Link></li>
+              <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} alt=''/></Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/partners">partners</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/startups">startups</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/code">code of conduct</Link></li>
@@ -55,12 +55,16 @@ const App: React.FC = () => {
           <div className="container-fluid footer-lightgreen">
             <div className="d-md-flex flex-md-equal">
               <div className="overflow-hidden text-center">
-                <img src={tdc_grayscale} className="" />
+                <img src={tdc_grayscale} alt=''/>
               </div>
               <div className="overflow-hidden text-center my-auto text-dark mt-4">
-                <img src={facebook} className="img-fluid mx-2" width="5%" />
-                <img src={twitter} className="img-fluid mx-2" width="5%" />
-                <img src={email} className="img-fluid mx-2" width="5%" />
+                <a href="https://www.facebook.com/TDConf"><img src={facebook} alt="Facebook"
+                                                               className="img-fluid mx-2" width="5%"/></a>
+                <a href="https://twitter.com/TrondheimDC"><img src={twitter} alt="Twitter"
+                                                               className="img-fluid mx-2" width="5%"/></a>
+                <a href="mailto:connect@trondheimdc.no"><img src={email} alt="Email"
+                                                             className="img-fluid mx-2" width="5%"/></a>
+
               </div>
             </div>
           </div>

@@ -1,12 +1,8 @@
 {
-  "name": "2019.new",
+  "name": "2019.trondheimdc.no",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.12",
-    "@types/react": "16.9.5",
-    "@types/react-dom": "16.9.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-router-dom": "^5.1.2",
@@ -35,6 +31,10 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.12",
+    "@types/react": "16.9.5",
+    "@types/react-dom": "16.9.1",
     "@types/react-router-dom": "^5.1.0"
   }
 }
