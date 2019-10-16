@@ -10,6 +10,7 @@
     "typescript": "3.6.4"
   },
   "scripts": {
+    "clean": "rm -rf ./build && rm -rf node_modules/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
