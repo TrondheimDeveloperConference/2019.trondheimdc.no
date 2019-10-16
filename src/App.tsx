@@ -15,6 +15,7 @@ import Root from "./Root";
 import Partners from "./Partners";
 import Startups from "./Startups";
 import CoC from "./CodeOfConduct";
+import Program from "./program/Progam";
 
 const App: React.FC = () => {
   return (
@@ -47,6 +48,9 @@ const App: React.FC = () => {
         <Switch>
           <Route exact path="/">
             <Root />
+          </Route>
+          <Route exact path="/program">
+            <Program />
           </Route>
           <Route exact path="/partners">
             <Partners />
