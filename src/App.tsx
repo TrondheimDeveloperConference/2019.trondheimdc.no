@@ -12,6 +12,7 @@ import facebook from './media/img/icons/facebook.svg';
 import twitter from './media/img/icons/twitter.svg';
 import email from './media/img/icons/email.svg';
 import Root from "./Root";
+import Partners from "./Partners";
 
 const App: React.FC = () => {
   return (
@@ -32,7 +33,6 @@ const App: React.FC = () => {
           <div className="collapse navbar-collapse mx-auto justify-content-md-center" id="navbarNav">
             <ul className="navbar-nav tdc-nav">
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/info">info</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/tickets">tickets</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/program">program</Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} alt=''/></Link></li>
               <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/partners">partners</Link></li>
@@ -45,6 +45,9 @@ const App: React.FC = () => {
         <Switch>
           <Route exact path="/">
             <Root />
+          </Route>
+          <Route exact path="/partners">
+            <Partners />
           </Route>
         </Switch>
 

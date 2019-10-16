@@ -3,6 +3,28 @@ import React from 'react';
 import partners_jumbotron from './media/img/jumbotron/partners_jumbotron.png';
 import partner_background from './media/img/coc_background.png';
 
+import bekk from './media/img/partners/bekk.svg';
+import bouvet from './media/img/partners/bouvet.svg';
+import centric from './media/img/partners/centric.svg';
+import cgi from './media/img/partners/cgi.svg';
+import dips from './media/img/partners/dips.svg';
+import equinor from './media/img/partners/equinor.svg';
+import evry from './media/img/partners/evry.svg';
+import fjelltopmedia from './media/img/partners/fjelltopmedia.png';
+import glasspaper from './media/img/partners/glasspaper.svg';
+import itema from './media/img/partners/itema.png';
+import itsjefen from './media/img/partners/itsjefen.png';
+import knowit from './media/img/partners/knowit.svg';
+import lindbak from './media/img/partners/lindbak.svg';
+import microsoft from './media/img/partners/microsoft.svg';
+import signicat from './media/img/partners/signicat.svg';
+import sportradar from './media/img/partners/sportradar.png';
+import sticos from './media/img/partners/sticos.png';
+import uninett from './media/img/partners/uninett.svg';
+import variant from './media/img/partners/variant.svg';
+import webstep from './media/img/partners/webstep.svg';
+
+
 const Partners = () => {
     return <>
         <section className="jumbotron text-left bg-warning">
@@ -56,97 +78,102 @@ const Partners = () => {
                     <div className="row h-100 justify-content-center align-items-center">
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.bekk.no/">
-                                <img src="/media/img/partners/bekk.svg" className="my-3 img-fluid" />
+                                <img src={bekk} alt='bekk' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.bouvet.no/">
-                                <img src="/media/img/partners/bouvet.svg" className="my-3 img-fluid" />
+                                <img src={bouvet} alt='bouvet' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="http://www.centric.eu/">
-                                <img src="/media/img/partners/centric.svg" className="my-3 img-fluid" />
+                                <img src={centric} alt='centric' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.acando.no/">
-                                <img src="/media/img/partners/cgi.svg" className="my-3 img-fluid" />
+                                <img src={cgi} alt='cgi' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.dips.com/no">
-                                <img src="/media/img/partners/dips.svg" className="my-3 img-fluid" />
+                                <img src={dips} alt='dips' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.equinor.com/">
-                                <img src="/media/img/partners/equinor.svg" className="my-3 img-fluid" />
+                                <img src={equinor} alt='equinor' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.evry.no/">
-                                <img src="/media/img/partners/evry.svg" className="my-3 img-fluid" />
+                                <img src={evry} alt='evry' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://fjelltoppmedia.no/">
-                                <img src="/media/img/partners/fjelltopmedia.png" className="my-3 img-fluid" />
+                                <img src={fjelltopmedia} alt='fjelltopmedia' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.glasspaper.no/">
-                                <img src="/media/img/partners/glasspaper.svg" className="my-3 img-fluid" />
+                                <img src={glasspaper} alt='glasspaper' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.itema.no/">
-                                <img src="/media/img/partners/itema.png" className="my-3 img-fluid" />
+                                <img src={itema} alt='itema' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://itsjefen.no/">
-                                <img src="/media/img/partners/itsjefen.png" className="my-3 img-fluid" />
+                                <img src={itsjefen} alt='itsjefen' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.knowit.no/">
-                                <img src="/media/img/partners/knowit.svg" className="my-3 img-fluid" />
+                                <img src={knowit} alt='knowit' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.lindbak.no/">
-                                <img src="/media/img/partners/lindbak.svg" className="my-3 img-fluid" />
+                                <img src={lindbak} alt='lindbak' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="http://www.microsoft.com/nb-no">
-                                <img src="/media/img/partners/microsoft.svg" className="my-3 img-fluid" />
+                                <img src={microsoft} alt='microsoft' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="http://www.signicat.no/">
-                                <img src="/media/img/partners/signicat.svg" className="my-3 img-fluid" />
+                                <img src={signicat} alt='signicat' className="my-3 img-fluid" />
+                            </a>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-6">
+                            <a href="https://www.sportradar.com/">
+                                <img src={sportradar} alt='sportradar' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.sticos.no/">
-                                <img src="/media/img/partners/sticos.png" className="my-3 img-fluid" />
+                                <img src={sticos} alt='sticos' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.uninett.no/">
-                                <img src="/media/img/partners/uninett.svg" className="my-3 img-fluid" />
+                                <img src={uninett} alt='uninett' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.variant.no/">
-                                <img src="/media/img/partners/variant.svg" className="my-3 img-fluid" />
+                                <img src={variant} alt='variant' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.webstep.no/">
-                                <img src="/media/img/partners/webstep.svg" className="my-3 img-fluid" />
+                                <img src={webstep} alt='webstep' className="my-3 img-fluid" />
                             </a>
                         </div>
                     </div>
@@ -155,7 +182,7 @@ const Partners = () => {
 
             <div className="container-fluid p-0 m-0">
                 <div className="d-md-flex flex-md-equal">
-                    <img src={partner_background} className="img-fluid" />
+                    <img src={partner_background} className="img-fluid" alt=''/>
                 </div>
             </div>
         </div>
