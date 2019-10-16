@@ -1,7 +1,6 @@
 import React from 'react';
 
 import startups_jumbotron from './media/img/jumbotron/startups_jumbotron.png';
-import startups_background from './media/img/jumbotron/coc_background.png';
 
 const Startups: React.FC = () => {
     return (
@@ -10,7 +9,7 @@ const Startups: React.FC = () => {
 
               <div className="container text-left d-md-flex flex-md-equal">
                   <div className="overflow-hidden">
-                      <img src={startups_jumbotron} className="img-fluid" />
+                      <img src={startups_jumbotron} className="img-fluid" alt='' />
                   </div>
               </div>
           </section>
@@ -40,11 +39,6 @@ const Startups: React.FC = () => {
                   </div>
               </div>
 
-              <div className="container-fluid p-0 m-0">
-                  <div className="d-md-flex flex-md-equal">
-                      <img src={startups_background} className="img-fluid" />
-                  </div>
-              </div>
           </div>
 
       </>

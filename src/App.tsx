@@ -13,6 +13,7 @@ import twitter from './media/img/icons/twitter.svg';
 import email from './media/img/icons/email.svg';
 import Root from "./Root";
 import Partners from "./Partners";
+import Startups from "./Startups";
 
 const App: React.FC = () => {
   return (
@@ -48,6 +49,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/partners">
             <Partners />
+          </Route>
+          <Route exact path="/startups">
+            <Startups />
           </Route>
         </Switch>
 
