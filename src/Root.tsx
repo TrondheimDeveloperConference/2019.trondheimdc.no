@@ -3,7 +3,6 @@ import React from 'react';
 import tdc_jumbotron from './media/img/jumbotron/tdc_jumbotron.png';
 import index01 from './media/img/index/index_01.jpg';
 import index03 from './media/img/index/index_03.jpg';
-import index02 from './media/img/bg.png';
 import dataforeningen from './media/img/index/dataforeningen.svg';
 import ixda from './media/img/index/ixda.svg';
 import javabin from './media/img/index/javabin.svg';
