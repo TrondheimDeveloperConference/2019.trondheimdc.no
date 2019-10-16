@@ -3,12 +3,13 @@ import React from 'react';
 import tdc_jumbotron from './media/img/jumbotron/tdc_jumbotron.png';
 import index01 from './media/img/index/index_01.jpg';
 import index03 from './media/img/index/index_03.jpg';
-import index04 from './media/img/index/index_04.png';
+import index02 from './media/img/bg.png';
 import dataforeningen from './media/img/index/dataforeningen.svg';
 import ixda from './media/img/index/ixda.svg';
 import javabin from './media/img/index/javabin.svg';
 import nnug from './media/img/index/nnug.svg';
 import spillmakerlauget from './media/img/index/spillmakerlauget.svg';
+import {Link} from "react-router-dom";
 
 const Root: React.FC = () => {
     return <>
@@ -24,13 +25,14 @@ const Root: React.FC = () => {
             <div className="container first mb-5">
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
+                        <h5 className="text-left text-white">NOT LONG NOW!</h5>
                         <h5 className="text-left text-white">Call for speakers</h5>
-                        <img src={index04} className="img-fluid" alt='' />
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
-                        <h1>Submit your talk now</h1>
-                        <h5 className="text-white">Our <u>call for presentations</u> is now open! We are interested in
-                            all topics related to development and IT in general!</h5>
+                        <h1>Get your tickets now!</h1>
+                        <h5 className="text-white"><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets</a> for TDC 2019
+                        are almost sold out!</h5>
+                        <p>Check out <Link to="/program">this years program</Link>, and get your tickets before it is too late!</p>
                     </div>
                 </div>
             </div>
@@ -41,10 +43,12 @@ const Root: React.FC = () => {
                         <img src={index01} className="img-fluid mb-5 border-bottom-right" width="80%" alt=''/>
                     </div>
                     <div className="col-md-4 text-left text-white mt-0">
-                        <p>The agenda will consists of multiple tracks for front-end, back-end, agile developers, and
+                        <p>The <Link to="/program">program for TDC 2019</Link> will consists of multiple tracks for
+                            front-end, back-end, agile developers, and
                             digital design. The conference strives to reach a balance between local, national and
                             international speakers, and a relatively large share of call-for-presentation
-                            submissions.</p>
+                            submissions.
+                        </p>
 
                         <p>TDC is a noncommercial event where all profit goes towards next years conference and other
                             community events throughtout the year in Trondheim</p>
