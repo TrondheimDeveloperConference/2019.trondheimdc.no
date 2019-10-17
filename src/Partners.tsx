@@ -14,6 +14,7 @@ import fjelltopmedia from './media/img/partners/fjelltopmedia.png';
 import glasspaper from './media/img/partners/glasspaper.svg';
 import itema from './media/img/partners/itema.png';
 import itsjefen from './media/img/partners/itsjefen.png';
+import kantega from './media/img/partners/kantega.svg';
 import knowit from './media/img/partners/knowit.svg';
 import lindbak from './media/img/partners/lindbak.svg';
 import microsoft from './media/img/partners/microsoft.svg';
@@ -134,6 +135,11 @@ const Partners = () => {
                         <div className="col-lg-2 col-md-4 col-sm-6">
                             <a href="https://www.knowit.no/">
                                 <img src={knowit} alt='knowit' className="my-3 img-fluid" />
+                            </a>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-6">
+                            <a href="https://www.kantega.no">
+                                <img src={kantega} alt='Kantega' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
