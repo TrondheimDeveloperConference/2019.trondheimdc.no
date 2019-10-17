@@ -1,6 +1,7 @@
 import React from 'react';
 import {getFavorites, getFilters, getSessions, LoadingState, Session, toggleFavourite} from "./data";
 import program_jumbotron from '../media/img/jumbotron/programme_jumbotron.png';
+import {Link} from "react-router-dom";
 
 interface ProgramProps {
 }
@@ -177,7 +178,9 @@ function Day(props: DayProps) {
                                                 className='row row-striped calendar-event my-5 py-3'>
                                         <div className='col-md-10 col-sm-12'>
                                             <h4 className='text-uppercase'>
-                                                <strong>{session.title}</strong>
+                                                <Link to={`/program/${session.sessionId}`}>
+                                                    <strong>{session.title}</strong>
+                                                </Link>
                                             </h4>
                                             <ul className='list-inline'>
                                                 <li className='list-inline-item'>
@@ -200,7 +203,6 @@ function Day(props: DayProps) {
                                                         </a>
                                                     </li>))}
                                             </ul>
-                                            <p>{session.intendedAudience}</p>
                                         </div>
                                     </div>
                                 })}
