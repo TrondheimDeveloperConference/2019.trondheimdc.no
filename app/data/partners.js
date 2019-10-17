@@ -31,7 +31,7 @@ export default [
     // {name: 'Itera', logo: 'itera.svg', url: 'http://www.itera.no/'},
     {name: 'ITsjefen', logo: 'itsjefen.png', url: 'https://itsjefen.no'},
     // {name: 'JPro', logo: 'jpro.svg', url: 'http://www.jpro.no/'},
-    // {name: 'Kantega', logo: 'kantega.svg', url: 'http://www.kantega.no/'},
+    {name: 'Kantega', logo: 'kantega.svg', url: 'http://www.kantega.no/'},
     {name: 'Knowit', logo: 'knowit.svg', url: 'https://www.knowit.no/'},
     // {name: 'Kodemaker', logo: 'kodemaker.svg', url: 'http://www.kodemaker.no/'},
     {name: 'Lindbak', logo: 'lindbak.svg', url: 'https://www.lindbak.no'},
