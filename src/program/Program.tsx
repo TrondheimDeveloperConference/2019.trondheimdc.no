@@ -2,6 +2,7 @@ import React from 'react';
 import {getFavorites, getFilters, getSessions, LoadingState, Session, toggleFavourite} from "./data";
 import program_jumbotron from '../media/img/jumbotron/programme_jumbotron.png';
 import {Link} from "react-router-dom";
+import { Circle, CheckCircle } from 'react-feather';
 
 interface ProgramProps {
 }
@@ -64,7 +65,6 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
     render() {
         return <>
             <section className="jumbotron text-left bg-warning">
-
                 <div className="container text-left d-md-flex flex-md-equal">
                     <div className="overflow-hidden">
                         <img src={program_jumbotron} className="img-fluid"  alt=''/>
@@ -74,7 +74,6 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
             <div id="events" className="container text-white py-4">
                 {this.getContent(this.state)}
             </div>
-
         </>
     }
 
@@ -108,7 +107,6 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
         toggleFavourite(sessionId)
             .then(favs => {
                 this.setState({favorites: favs});
-
             });
     }
 }
@@ -174,8 +172,10 @@ function Day(props: DayProps) {
                             <h3>{timeSlot.substr(-5)}</h3>
                             {timeSlots[timeSlot]
                                 .map((session, idx) => {
+                                    const isFavorite = props.favorites.indexOf(session.sessionId) !== -1;
+                                    const fav = isFavorite ? 'favourite' : '';
                                     return <div key={session.sessionId}
-                                                className='row row-striped calendar-event my-5 py-3'>
+                                                className={`row row-striped calendar-event my-5 py-3 ${fav}`}>
                                         <div className='col-md-10 col-sm-12'>
                                             <h4 className='text-uppercase'>
                                                 <Link to={`/program/${session.sessionId}`}>
@@ -204,6 +204,9 @@ function Day(props: DayProps) {
                                                     </li>))}
                                             </ul>
                                         </div>
+                                        <button className='fav-button' onClick={() => {props.addToFav(session.sessionId)}}>
+                                            {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
+                                        </button>
                                     </div>
                                 })}
                         </div>
