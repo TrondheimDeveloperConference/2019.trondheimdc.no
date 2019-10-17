@@ -74,8 +74,27 @@ export function getSessions(): Promise<Session[]> {
 const FAVORITES_KEY = 'favorites';
 const FILTER_KEY = 'filters';
 
+function portOldFavourites() {
+    try {
+        const storedFavorites = localStorage.getItem('programsettings_v3');
+        if (!!storedFavorites) {
+            const settings = JSON.parse(storedFavorites);
+            const favorites = settings.favorites;
+            if (!!favorites) {
+                // @ts-ignore
+                const sessionIds = favorites.map(f => f.sessionId);
+                setFavorites(sessionIds);
+                localStorage.removeItem('programsettings_v3');
+            }
+        }
+    } catch (e) {
+        console.log(e);
+    }
+}
+
 export function getFavorites(): Promise<string[]> {
     return new Promise<string[]>((resolve, reject) => {
+        portOldFavourites();
         const favorites = localStorage.getItem(FAVORITES_KEY) || '[]';
         resolve(JSON.parse(favorites))
     })
