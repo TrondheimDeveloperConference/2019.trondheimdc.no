@@ -15,12 +15,12 @@ import Root from "./Root";
 import Partners from "./Partners";
 import Startups from "./Startups";
 import CoC from "./CodeOfConduct";
-import Program from "./program/Progam";
+import Program from "./program/Program";
+import Session from './program/Session';
 
 const App: React.FC = () => {
   return (
       <Router>
-        <body>
         <nav className="navbar sticky-top navbar-opacity navbar-expand-lg navbar-dark text-center mx-auto py-3">
           <a className="navbar-brand d-block d-sm-none" href="/"><img src={tdc_menu} alt=''/></a>
           <button className="navbar-toggler"
@@ -51,6 +51,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/program">
             <Program />
+          </Route>
+          <Route exact path="/program/:sessionId">
+            <Session />
           </Route>
           <Route exact path="/partners">
             <Partners />
@@ -83,7 +86,6 @@ const App: React.FC = () => {
             </div>
           </div>
         </footer>
-        </body>
       </Router>
   );
 };

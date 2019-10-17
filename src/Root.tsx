@@ -25,7 +25,6 @@ const Root: React.FC = () => {
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
                         <h5 className="text-left text-white">NOT LONG NOW!</h5>
-                        <h5 className="text-left text-white">Call for speakers</h5>
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
                         <h1>Get your tickets now!</h1>

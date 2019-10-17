@@ -66,7 +66,7 @@ export function getSessions(): Promise<Session[]> {
     sessions = fetch('https://api.trondheimdc.no/public/allSessions/TDC2019')
         .then(response => response.json())
         .then(json => json.sessions)
-        .then((sessions: any[]) => sessions.map(s => transformSession(s)))
+        .then((sessions: any[]) => sessions.map(s => transformSession(s)));
 
     return sessions;
 }
@@ -81,8 +81,26 @@ export function getFavorites(): Promise<string[]> {
     })
 }
 
-export function setFavorites(favorites: string[]) {
-    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites))
+export function toggleFavourite(sessionId: string): Promise<string[]> {
+    return getFavorites()
+        .then(favorites => {
+            const isFavorite = favorites.indexOf(sessionId) !== -1;
+            if (isFavorite) {
+                const filtered = favorites.filter(id => id !== sessionId);
+                setFavorites(filtered);
+                return filtered;
+            } else {
+                const added = [sessionId].concat(sessionId);
+                setFavorites(added);
+                return added;
+            }
+        })
+        .then(favourites => setFavorites(favourites))
+}
+
+function setFavorites(favorites: string[]) {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
+    return favorites;
 }
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {getFavorites, getFilters, getSessions, LoadingState, Session, setFavorites} from "./data";
+import {getFavorites, getFilters, getSessions, LoadingState, Session, toggleFavourite} from "./data";
 import program_jumbotron from '../media/img/jumbotron/programme_jumbotron.png';
 
 interface ProgramProps {
@@ -104,23 +104,16 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
     }
 
     private toggleFavorite(sessionId: string) {
-        const isFavorite = this.state.favorites.indexOf(sessionId) !== -1;
-        if (isFavorite) {
-            const favorites = this.state.favorites.filter(id => id !== sessionId);
-            this.setState({favorites: favorites});
-            setFavorites(favorites);
-        } else {
-            const favorites = [sessionId].concat(this.state.favorites);
-            this.setState(
-                {favorites: [sessionId].concat(this.state.favorites)}
-            );
-            setFavorites(favorites);
-        }
+        toggleFavourite(sessionId)
+            .then(favs => {
+                this.setState({favorites: favs});
+
+            });
     }
 }
 
 
-const Failure: React.FC = () => {
+export const Failure: React.FC = () => {
     return (
         <div className='program__loading'>
             <h2 className='program__loading-header'>Woooops!</h2>
@@ -130,7 +123,7 @@ const Failure: React.FC = () => {
     )
 };
 
-const  Loading: React.FC = () => {
+export const  Loading: React.FC = () => {
     return (
         <div className='program__loading'>
             <h2 className='program__loading-header'>Loading program...</h2>
@@ -149,10 +142,10 @@ function SessionList(props: SessionListProps) {
     return (
         <>
             <Day favorites={props.favorites} addToFav={props.addToFav}
-                 title='Conference'
+                 title='Conference' key='conference'
                  sessions={props.sessions} dayFilter={MondayPrefix}/>
             <Day favorites={props.favorites} addToFav={props.addToFav}
-                 title='Workshops'
+                 title='Workshops' key='workshope'
                  sessions={props.sessions} dayFilter={TuesdayPrefix}/>
         </>
     );
@@ -180,7 +173,8 @@ function Day(props: DayProps) {
                             <h3>{timeSlot.substr(-5)}</h3>
                             {timeSlots[timeSlot]
                                 .map((session, idx) => {
-                                    return <div className='row row-striped calendar-event my-5 py-3'>
+                                    return <div key={session.sessionId}
+                                                className='row row-striped calendar-event my-5 py-3'>
                                         <div className='col-md-10 col-sm-12'>
                                             <h4 className='text-uppercase'>
                                                 <strong>{session.title}</strong>
@@ -199,7 +193,7 @@ function Day(props: DayProps) {
                                                     {session.language === "en" ? "English" : "Norwegian"}
                                                 </li>
                                                 {session.speakers.map(speaker => (
-                                                    <li className='list-inline-item'>
+                                                    <li key={speaker.name} className='list-inline-item'>
                                                         <i className='fas fa-user' aria-hidden='true'></i>
                                                         <a href={`https://twitter.com/${speaker.twitter}`}>
                                                             {speaker.name}
