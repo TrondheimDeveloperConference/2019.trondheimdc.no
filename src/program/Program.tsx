@@ -18,7 +18,7 @@ interface ProgramState {
     sessions: Session[],
     favorites: string[]
 }
-type days = 'mon' | 'tue' | 'all';
+
 type lang = 'en' | 'no' | 'both';
 type format = 'all' | 'presentation' | 'workshop' | 'fav';
 class Filter {
@@ -182,8 +182,8 @@ function Day(props: DayProps) {
                                     const fav = isFavorite ? 'favourite' : '';
                                     return (
                                         <div key={session.sessionId}
-                                             className={`row row-striped calendar-event my-5 py-3 ${fav}`}>
-                                            <div className='col-md-10 col-sm-12'>
+                                             className={`row row-striped calendar-event my-5 py-3 align-items-center ${fav}`}>
+                                            <div className='col-md-11 col-sm-10'>
                                                 <h4 className='text-uppercase'>
                                                     <Link to={`/program/${session.sessionId}`}>
                                                         <strong>{session.title}</strong>
@@ -205,15 +205,15 @@ function Day(props: DayProps) {
                                                     {session.speakers.map(speaker => (
                                                         <li key={speaker.name} className='list-inline-item'>
                                                             <FontAwesomeIcon icon={faUser} aria-hidden='true'/>
-                                                            <a href={`https://twitter.com/${speaker.twitter}`}>
-                                                                {speaker.name}
-                                                            </a>
+                                                            {speaker.name}
                                                         </li>))}
                                                 </ul>
                                             </div>
-                                            <button className='fav-button' onClick={() => {props.addToFav(session.sessionId)}}>
-                                                {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
-                                            </button>
+                                            <div className='col-md-1 col-sm-2 program-favorite-button'>
+                                                <button onClick={() => {props.addToFav(session.sessionId)}}>
+                                                    {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
+                                                </button>
+                                            </div>
                                         </div>)
                                 })}
                         </div>

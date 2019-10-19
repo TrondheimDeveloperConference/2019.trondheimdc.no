@@ -5,6 +5,10 @@ import {
 import {getFavorites, getSessions, LoadingState, Session, toggleFavourite} from "./data";
 
 import {Failure, Loading, makeSwitchExaustive} from "./Program";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faStopwatch} from "@fortawesome/free-solid-svg-icons/faStopwatch";
+import {faLocationArrow} from "@fortawesome/free-solid-svg-icons/faLocationArrow";
+import {faGlobeEurope} from "@fortawesome/free-solid-svg-icons/faGlobeEurope";
 
 const Wrapper: React.FC = () => {
     const {sessionId} = useParams();
@@ -96,15 +100,15 @@ const SessionContent: React.FC<SCP> = (props) => {
                 <div className="col-md-6">
                     <div className="text-left pr-5 pt-4 text-white">
                         <div>
-                            <i className='fas fa-stopwatch' aria-hidden='true'></i>
+                            <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
                             {session.length} minutes
                         </div>
                         <div>
-                            <i className='fas fa-location-arrow' aria-hidden='true'></i>
+                            <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
                             {session.room}
                         </div>
                         <div>
-                            <i className='fas fa-globe-europe' aria-hidden='true'></i>
+                            <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
                             {session.language === "en" ? "English" : "Norwegian"}
                         </div>
                     </div>
