@@ -149,9 +149,13 @@ const Root: React.FC = () => {
                         <h2>Questions?</h2>
                     </div>
                     <div className="col-md-6 where text-left text-white">
-                        <p>Do not hesitate to contact us if you have any questions. Contact us at <a
-                            href="mailto:connect@trondheimdc.no">connect@trondheimdc.no</a> and we we'll try our best to
-                            give you an answer.</p>
+                        <p>Do not hesitate to contact us if you have any questions. Contact us by
+                            <a href="mailto:connect@trondheimdc.no">email</a>,
+                            <a href="https://www.facebook.com/TDConf">Facebook</a> or
+                            <a href="https://twitter.com/TrondheimDC">Twitter</a>
+                            and we we'll try our best to
+                            give you an answer.
+                        </p>
 
                         <p>We are looking to seeing you at Trondheim Developer Conference 2019!</p>
                     </div>
