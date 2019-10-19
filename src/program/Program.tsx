@@ -2,7 +2,7 @@ import React from 'react';
 import {getFavorites, getFilters, getSessions, LoadingState, Session, toggleFavourite} from "./data";
 import program_jumbotron from '../media/img/jumbotron/programme_jumbotron.png';
 import {Link} from "react-router-dom";
-import { Circle, CheckCircle } from 'react-feather';
+import {CheckCircle, Circle} from 'react-feather';
 
 interface ProgramProps {
 }
@@ -14,26 +14,25 @@ interface ProgramState {
     favorites: string[]
 }
 type days = 'mon' | 'tue' | 'all';
+type lang = 'en' | 'no' | 'both';
+type format = 'all' | 'presentation' | 'workshop' | 'fav';
 class Filter {
     constructor(
-        readonly day: days = 'all',
-        readonly language: 'en' | 'no' | 'both' = 'both',
-        readonly format: 'all' | 'presentation' | 'workshop' | 'fav' | 'X' = 'all'
+        readonly language: lang = 'both',
+        readonly format: format = 'all'
     ) { }
+
+    withLanguage(language: lang): Filter {
+        return new Filter(language, this.format);
+    }
+
+    withFormat(f: format): Filter {
+        return new Filter(this.language, f);
+    }
 }
 
 const MondayPrefix = '2019-10-28';
 const TuesdayPrefix = '2019-10-29';
-
-function getDayPrefix(day: days): string {
-    if (day === 'mon') {
-        return MondayPrefix;
-    } else if (day === 'tue') {
-        return TuesdayPrefix;
-    } else {
-        return 'all';
-    }
-}
 
 export default class Program extends React.PureComponent<ProgramProps, ProgramState> {
     constructor(props: ProgramProps) {
@@ -71,7 +70,11 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
                     </div>
                 </div>
             </section>
-            <div id="events" className="container text-white py-4">
+            <div className="container text-white py-4">
+                <FilterContainer filter={this.state.filter}
+                                 updateFilter={(filter: Filter) => this.setState({filter})}/>
+            </div>
+            <div className="container text-white py-4">
                 {this.getContent(this.state)}
             </div>
         </>
@@ -94,11 +97,9 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
     }
 
     private filterSessions(sessions: Session[], filter: Filter, fav: string[]) {
-        const {day, language, format} = filter;
-        const dayPrefix = getDayPrefix(day);
+        const {language, format} = filter;
 
         return sessions
-            .filter(s => day === 'all' || s.startTime.startsWith(dayPrefix))
             .filter(s => language === 'both' || s.language === language)
             .filter(s => format === 'all' || s.format === format || (format === 'fav' && fav.includes(s.sessionId)));
     }
@@ -122,7 +123,7 @@ export const Failure: React.FC = () => {
     )
 };
 
-export const  Loading: React.FC = () => {
+export const Loading: React.FC = () => {
     return (
         <div className='program__loading'>
             <h2 className='program__loading-header'>Loading program...</h2>
@@ -141,10 +142,10 @@ function SessionList(props: SessionListProps) {
     return (
         <>
             <Day favorites={props.favorites} addToFav={props.addToFav}
-                 title='Conference' key='conference'
+                 title='Conference 28. October' key='conference'
                  sessions={props.sessions} dayFilter={MondayPrefix}/>
             <Day favorites={props.favorites} addToFav={props.addToFav}
-                 title='Workshops' key='workshope'
+                 title='Workshops 29. & 30. October' key='workshope'
                  sessions={props.sessions} dayFilter={TuesdayPrefix}/>
         </>
     );
@@ -174,40 +175,41 @@ function Day(props: DayProps) {
                                 .map((session, idx) => {
                                     const isFavorite = props.favorites.indexOf(session.sessionId) !== -1;
                                     const fav = isFavorite ? 'favourite' : '';
-                                    return <div key={session.sessionId}
-                                                className={`row row-striped calendar-event my-5 py-3 ${fav}`}>
-                                        <div className='col-md-10 col-sm-12'>
-                                            <h4 className='text-uppercase'>
-                                                <Link to={`/program/${session.sessionId}`}>
-                                                    <strong>{session.title}</strong>
-                                                </Link>
-                                            </h4>
-                                            <ul className='list-inline'>
-                                                <li className='list-inline-item'>
-                                                    <i className='fas fa-stopwatch' aria-hidden='true'></i>
-                                                    {session.length} minutes
-                                                </li>
-                                                <li className='list-inline-item'>
-                                                    <i className='fas fa-location-arrow' aria-hidden='true'></i>
-                                                    {session.room}
-                                                </li>
-                                                <li className='list-inline-item'>
-                                                    <i className='fas fa-globe-europe' aria-hidden='true'></i>
-                                                    {session.language === "en" ? "English" : "Norwegian"}
-                                                </li>
-                                                {session.speakers.map(speaker => (
-                                                    <li key={speaker.name} className='list-inline-item'>
-                                                        <i className='fas fa-user' aria-hidden='true'></i>
-                                                        <a href={`https://twitter.com/${speaker.twitter}`}>
-                                                            {speaker.name}
-                                                        </a>
-                                                    </li>))}
-                                            </ul>
-                                        </div>
-                                        <button className='fav-button' onClick={() => {props.addToFav(session.sessionId)}}>
-                                            {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
-                                        </button>
-                                    </div>
+                                    return (
+                                        <div key={session.sessionId}
+                                             className={`row row-striped calendar-event my-5 py-3 ${fav}`}>
+                                            <div className='col-md-10 col-sm-12'>
+                                                <h4 className='text-uppercase'>
+                                                    <Link to={`/program/${session.sessionId}`}>
+                                                        <strong>{session.title}</strong>
+                                                    </Link>
+                                                </h4>
+                                                <ul className='list-inline'>
+                                                    <li className='list-inline-item'>
+                                                        <i className='fas fa-stopwatch' aria-hidden='true'></i>
+                                                        {session.length} minutes
+                                                    </li>
+                                                    <li className='list-inline-item'>
+                                                        <i className='fas fa-location-arrow' aria-hidden='true'></i>
+                                                        {session.room}
+                                                    </li>
+                                                    <li className='list-inline-item'>
+                                                        <i className='fas fa-globe-europe' aria-hidden='true'></i>
+                                                        {session.language === "en" ? "English" : "Norwegian"}
+                                                    </li>
+                                                    {session.speakers.map(speaker => (
+                                                        <li key={speaker.name} className='list-inline-item'>
+                                                            <i className='fas fa-user' aria-hidden='true'></i>
+                                                            <a href={`https://twitter.com/${speaker.twitter}`}>
+                                                                {speaker.name}
+                                                            </a>
+                                                        </li>))}
+                                                </ul>
+                                            </div>
+                                            <button className='fav-button' onClick={() => {props.addToFav(session.sessionId)}}>
+                                                {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
+                                            </button>
+                                        </div>)
                                 })}
                         </div>
                     })}
@@ -216,14 +218,82 @@ function Day(props: DayProps) {
 }
 
 function groupByTimeSlot(sessions: Session[]): {[a: string]: Session[]} {
-    const sorted = sessions.sort(function(a, b) {
-        return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
-    });
-    const grouped = sorted.reduce(function(rv: {[a: string]: Session[]}, x: Session) {
-        (rv[x['startTime']] = rv[x['startTime']] || []).push(x);
-        return rv;
-    }, {});
-    return grouped;
+    const sorted = sessions.sort((a, b) => new Date(a.startTime).getTime() - new Date(b.startTime).getTime());
+    return sorted.reduce(
+        (rv: { [a: string]: Session[] }, x: Session) => {
+            (rv[x['startTime']] = rv[x['startTime']] || []).push(x);
+            return rv;
+        }, {});
+}
+
+interface FilterProps {
+    filter: Filter,
+    updateFilter: (filter: Filter) => void
+}
+function FilterContainer (props: FilterProps) {
+    return (
+        <div className="program-filter row">
+            <div className="row">
+                <div>
+                    <div className="program-filter-header">Language</div>
+                    <div className="program-filter-button-group">
+                        <button className="program-filter-button " onClick={(e) => {
+                            const {filter} = props;
+                            props.updateFilter(filter.withLanguage('both'))
+                        }}>
+                            Both
+                        </button>
+                        <button className="program-filter-button " onClick={(e) => {
+                            const {filter} = props;
+                            props.updateFilter(filter.withLanguage('no'))
+                        }}>
+                            Norwegian
+                        </button>
+                        <button className="program-filter-button "
+                                onClick={(e) => {
+                                    const {filter} = props;
+                                    props.updateFilter(filter.withLanguage('en'))
+                                }}>
+                            English
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="program-filter-header">Format</div>
+                <div className="program-filter-button-group">
+                    <button className="program-filter-button"
+                            onClick={(e) => {
+                                const {filter} = props;
+                                props.updateFilter(filter.withFormat('all'))
+                            }}>
+                        All
+                    </button>
+                    <button className="program-filter-button"
+                            onClick={(e) => {
+                                const {filter} = props;
+                                props.updateFilter(filter.withFormat('presentation'))
+                            }}>
+                        Presentations
+                    </button>
+                    <button className="program-filter-button"
+                            onClick={(e) => {
+                                const {filter} = props;
+                                props.updateFilter(filter.withFormat('workshop'))
+                            }}>
+                        Workshops
+                    </button>
+                    <button className="program-filter-button"
+                            onClick={(e) => {
+                                const {filter} = props;
+                                props.updateFilter(filter.withFormat('fav'))
+                            }}>
+                        My Favorites
+                    </button>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export function makeSwitchExaustive(_unused: never): never {

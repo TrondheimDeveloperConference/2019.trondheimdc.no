@@ -105,13 +105,9 @@ export function toggleFavourite(sessionId: string): Promise<string[]> {
         .then(favorites => {
             const isFavorite = favorites.indexOf(sessionId) !== -1;
             if (isFavorite) {
-                const filtered = favorites.filter(id => id !== sessionId);
-                setFavorites(filtered);
-                return filtered;
+                return favorites.filter(id => id !== sessionId);
             } else {
-                const added = [sessionId].concat(sessionId);
-                setFavorites(added);
-                return added;
+                return favorites.concat(sessionId);
             }
         })
         .then(favourites => setFavorites(favourites))
