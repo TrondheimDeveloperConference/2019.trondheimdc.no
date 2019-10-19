@@ -35,12 +35,11 @@ const App: React.FC = () => {
 
           <div className="collapse navbar-collapse mx-auto justify-content-md-center" id="navbarNav">
             <ul className="navbar-nav tdc-nav">
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/info">info</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/program">program</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} alt=''/></Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/partners">partners</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/startups">startups</Link></li>
-              <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/conduct">code of conduct</Link></li>
+                <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/program">program</Link></li>
+                <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/partners">partners</Link></li>
+                <li className="nav-item align-self-center mx-4"><Link className="nav-link d-none d-sm-block" to="/"><img src={tdc_menu} alt=''/></Link></li>
+                <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/startups">startups</Link></li>
+                <li className="nav-item align-self-center mx-4"><Link className="nav-link" to="/conduct">code of conduct</Link></li>
             </ul>
           </div>
         </nav>

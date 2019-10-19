@@ -3,6 +3,11 @@ import {getFavorites, getFilters, getSessions, LoadingState, Session, toggleFavo
 import program_jumbotron from '../media/img/jumbotron/programme_jumbotron.png';
 import {Link} from "react-router-dom";
 import {CheckCircle, Circle} from 'react-feather';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faStopwatch} from "@fortawesome/free-solid-svg-icons/faStopwatch";
+import {faLocationArrow} from "@fortawesome/free-solid-svg-icons/faLocationArrow";
+import {faGlobeEurope} from "@fortawesome/free-solid-svg-icons/faGlobeEurope";
+import {faUser} from "@fortawesome/free-solid-svg-icons/faUser";
 
 interface ProgramProps {
 }
@@ -186,20 +191,20 @@ function Day(props: DayProps) {
                                                 </h4>
                                                 <ul className='list-inline'>
                                                     <li className='list-inline-item'>
-                                                        <i className='fas fa-stopwatch' aria-hidden='true'></i>
+                                                        <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
                                                         {session.length} minutes
                                                     </li>
                                                     <li className='list-inline-item'>
-                                                        <i className='fas fa-location-arrow' aria-hidden='true'></i>
+                                                        <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
                                                         {session.room}
                                                     </li>
                                                     <li className='list-inline-item'>
-                                                        <i className='fas fa-globe-europe' aria-hidden='true'></i>
+                                                        <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
                                                         {session.language === "en" ? "English" : "Norwegian"}
                                                     </li>
                                                     {session.speakers.map(speaker => (
                                                         <li key={speaker.name} className='list-inline-item'>
-                                                            <i className='fas fa-user' aria-hidden='true'></i>
+                                                            <FontAwesomeIcon icon={faUser} aria-hidden='true'/>
                                                             <a href={`https://twitter.com/${speaker.twitter}`}>
                                                                 {speaker.name}
                                                             </a>
