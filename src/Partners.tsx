@@ -18,6 +18,7 @@ import kantega from './media/img/partners/kantega.svg';
 import knowit from './media/img/partners/knowit.svg';
 import lindbak from './media/img/partners/lindbak.svg';
 import microsoft from './media/img/partners/microsoft.svg';
+import programutvikling from './media/img/partners/programutvikling.svg';
 import signicat from './media/img/partners/signicat.svg';
 import sportradar from './media/img/partners/sportradar.png';
 import sticos from './media/img/partners/sticos.png';
@@ -88,7 +89,7 @@ const Partners = () => {
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
-                            <a href="http://www.centric.eu/">
+                            <a href="https://www.centric.eu/">
                                 <img src={centric} alt='centric' className="my-3 img-fluid" />
                             </a>
                         </div>
@@ -148,12 +149,17 @@ const Partners = () => {
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
-                            <a href="http://www.microsoft.com/nb-no">
+                            <a href="https://www.microsoft.com/nb-no">
                                 <img src={microsoft} alt='microsoft' className="my-3 img-fluid" />
                             </a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6">
-                            <a href="http://www.signicat.no/">
+                            <a href="https://programutvikling.no">
+                                <img src={programutvikling} alt='programutvikling' className="my-3 img-fluid" />
+                            </a>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-6">
+                            <a href="https://www.signicat.no/">
                                 <img src={signicat} alt='signicat' className="my-3 img-fluid" />
                             </a>
                         </div>
