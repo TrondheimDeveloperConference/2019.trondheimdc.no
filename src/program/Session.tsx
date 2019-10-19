@@ -9,6 +9,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStopwatch} from "@fortawesome/free-solid-svg-icons/faStopwatch";
 import {faLocationArrow} from "@fortawesome/free-solid-svg-icons/faLocationArrow";
 import {faGlobeEurope} from "@fortawesome/free-solid-svg-icons/faGlobeEurope";
+import {Twitter} from "react-feather";
 
 const Wrapper: React.FC = () => {
     const {sessionId} = useParams();
@@ -94,49 +95,48 @@ const SessionContent: React.FC<SCP> = (props) => {
     const {session} = props;
     return (<div>
         <div className="container first mb-5">
-            <h1 className="text-right pr-5 pt-4 text-white">{session.title}</h1>
-            <div className="d-md-flex flex-md-equal">
-
-                <div className="col-md-6">
-                    <div className="text-left pr-5 pt-4 text-white">
-                        <div>
-                            <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
-                            {session.length} minutes
-                        </div>
-                        <div>
-                            <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
-                            {session.room}
-                        </div>
-                        <div>
-                            <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
-                            {session.language === "en" ? "English" : "Norwegian"}
-                        </div>
-                    </div>
+            <h1 className="text-white">{session.title}</h1>
+            <div className="row justify-content-center pt-4">
+                <div className='col-2'>
+                    <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
+                    {session.length} minutes
                 </div>
-                <div className="col-md-6 text-left text-white mt-4">
-                    <div className="text-left pr-5 pt-4 text-white">
-                        <h2>Description</h2>
-                        <p>{session.abstract}</p>
-
-                        <h2>Indended audience</h2>
-                        <p>{session.intendedAudience}</p>
-                    </div>
+                <div className='col-2'>
+                    <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
+                    {session.room}
                 </div>
-
+                <div className='col-2'>
+                    <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
+                    {session.language === "en" ? "English" : "Norwegian"}
+                </div>
             </div>
-            <div className="d-md-flex flex-md-equal">
+            <div className="d-md-flex flex-md-equal pt-4">
+                <div className="row justify-content-center text-white">
+                    <p>{session.abstract}</p>
+
+                    <h2>Indended audience</h2>
+                    <p>{session.intendedAudience}</p>
+                </div>
+            </div>
+            <div className="d-md-flex flex-md-equal pt-4">
                 {session.speakers.map(speaker => (
-                    <div>
-                        <h2>
-                            <a key={speaker.name} href={`https://twitter.com/${speaker.twitter}`}>
-                                {speaker.name}
-                            </a>
-                        </h2>
-                        <img src={speaker.pictureUrl} alt={speaker.name}/>
-                        <p>{speaker.bio}</p>
+                    <div key={speaker.name}>
+                        <div className='row justify-content-center'>
+                            <h2>
+                                <span className='mr-2'>{speaker.name}</span>
+                                <a href={`https://twitter.com/${speaker.twitter}`}>
+                                    <Twitter />
+                                </a>
+                            </h2>
+                        </div>
+                        <div className='row'>
+                            <img className='col-md-6'
+                                src={speaker.pictureUrl} alt={speaker.name}/>
+                            <p className='col-md-6'>{speaker.bio}</p>
+                        </div>
                     </div>
                 ))}
             </div>
-            </div>
+        </div>
     </div>);
 };
