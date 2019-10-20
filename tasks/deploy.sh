@@ -16,11 +16,11 @@ fi;
 
 echo "Starting deploy"
 
-cp dist/index.html dist/program.html
-cp dist/index.html dist/partners.html
-cp dist/index.html dist/startups.html
-cp dist/index.html dist/conduct.html
-cp dist/index.html dist/404.html
+cp build/index.html build/program.html
+cp build/index.html build/partners.html
+cp build/index.html build/startups.html
+cp build/index.html build/conduct.html
+cp build/index.html build/404.html
 
 cp -R build $HOME/dist
 
