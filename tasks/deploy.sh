@@ -16,6 +16,12 @@ fi;
 
 echo "Starting deploy"
 
+cp dist/index.html dist/program.html
+cp dist/index.html dist/partners.html
+cp dist/index.html dist/startups.html
+cp dist/index.html dist/conduct.html
+cp dist/index.html dist/404.html
+
 cp -R build $HOME/dist
 
 cd $HOME
@@ -32,6 +38,8 @@ cd 2019.trondheimdc.no
 cp -R $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
+
+rm -rf *
 
 git add -f .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
