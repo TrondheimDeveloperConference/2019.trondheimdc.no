@@ -35,11 +35,11 @@ else
 fi;
 
 cd 2019.trondheimdc.no
+rm -rf *
+
 cp -R $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
-
-rm -rf *
 
 git add -f .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
