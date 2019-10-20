@@ -36,6 +36,7 @@ fi;
 
 cd 2019.trondheimdc.no
 rm -rf *
+git checkout CNAME
 
 cp -R $HOME/dist/* .
 
