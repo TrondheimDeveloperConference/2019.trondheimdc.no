@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Link
 } from 'react-router-dom';
 
 import tdc_menu from './media/img/tdc_menu.png';
@@ -29,11 +30,21 @@ const App: React.FC = () => {
 
                 <Navbar.Collapse id="navbarNav" className='mx-auto justify-content-md-center' >
                     <Nav className="tdc-nav" as='ul'>
-                        <li className="nav-item align-self-center mx-4"><Nav.Link href="/program">program</Nav.Link></li>
-                        <li className="nav-item align-self-center mx-4"><Nav.Link href="/partners">partners</Nav.Link></li>
-                        <li className="nav-item align-self-center mx-4"><Nav.Link href="/" ><img src={tdc_menu} alt=''/></Nav.Link></li>
-                        <li className="nav-item align-self-center mx-4"><Nav.Link href="/startups">startups</Nav.Link></li>
-                        <li className="nav-item align-self-center mx-4"><Nav.Link href="/conduct">code of conduct</Nav.Link></li>
+                        <li className="nav-item align-self-center mx-4">
+                            <Link className="nav-link" to="/program">program</Link>
+                        </li>
+                        <li className="nav-item align-self-center mx-4">
+                            <Link className="nav-link" to="/partners">partners</Link>
+                        </li>
+                        <li className="nav-item align-self-center mx-4">
+                            <Link className="nav-link" to="/"><img src={tdc_menu} alt=''/></Link>
+                        </li>
+                        <li className="nav-item align-self-center mx-4">
+                            <Link className="nav-link" to="/startups">startups</Link>
+                        </li>
+                        <li className="nav-item align-self-center mx-4">
+                            <Link className="nav-link" to="/conduct">code of conduct</Link>
+                        </li>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
