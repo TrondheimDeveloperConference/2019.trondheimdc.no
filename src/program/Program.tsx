@@ -237,24 +237,24 @@ interface FilterProps {
 }
 function FilterContainer (props: FilterProps) {
     return (
-        <div className="program-filter row">
+        <div className="program-filter container">
             <div className="row">
-                <div>
+                <div className="col-md-6">
                     <div className="program-filter-header">Language</div>
                     <div className="program-filter-button-group">
-                        <button className="program-filter-button " onClick={(e) => {
+                        <button className="program-filter-button btn btn-primary" onClick={(e) => {
                             const {filter} = props;
                             props.updateFilter(filter.withLanguage('both'))
                         }}>
                             Both
                         </button>
-                        <button className="program-filter-button " onClick={(e) => {
+                        <button className="program-filter-button btn btn-primary" onClick={(e) => {
                             const {filter} = props;
                             props.updateFilter(filter.withLanguage('no'))
                         }}>
                             Norwegian
                         </button>
-                        <button className="program-filter-button "
+                        <button className="program-filter-button btn btn-primary"
                                 onClick={(e) => {
                                     const {filter} = props;
                                     props.updateFilter(filter.withLanguage('en'))
@@ -265,36 +265,38 @@ function FilterContainer (props: FilterProps) {
                 </div>
             </div>
             <div className="row">
+                <div className="col-md-6">
                 <div className="program-filter-header">Format</div>
                 <div className="program-filter-button-group">
-                    <button className="program-filter-button"
+                    <button className="program-filter-button btn btn-primary"
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('all'))
                             }}>
                         All
                     </button>
-                    <button className="program-filter-button"
+                    <button className="program-filter-button btn btn-primary"
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('presentation'))
                             }}>
                         Presentations
                     </button>
-                    <button className="program-filter-button"
+                    <button className="program-filter-button btn btn-primary"
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('workshop'))
                             }}>
                         Workshops
                     </button>
-                    <button className="program-filter-button"
+                    <button className="program-filter-button btn btn-primary"
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('fav'))
                             }}>
                         My Favorites
                     </button>
+                </div>
                 </div>
             </div>
         </div>

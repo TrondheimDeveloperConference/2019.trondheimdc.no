@@ -35,7 +35,7 @@ const Root: React.FC = () => {
                 </div>
             </div>
 
-            <div className="container-fluid second p-0 m-0">
+            <div className="container-fluid second p-5 m-2">
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6 p-0 m-0">
                         <img src={index01} className="img-fluid mb-5 border-bottom-right" width="80%" alt=''/>
@@ -100,7 +100,7 @@ const Root: React.FC = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-white">Where?</h5>
+                            <h5 className="p-2 text-dark">Where?</h5>
 
                             <div className="where py-4 pl-5 text-white">
                                 Clarion Congress<br/>
@@ -111,7 +111,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-white">When?</h5>
+                            <h5 className="p-2 text-dark">When?</h5>
                             <div className="where py-4 pl-5 text-white">
                                 October 28.<br/>
                                 2019,<br/>
@@ -121,7 +121,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-white">Speakers</h5>
+                            <h5 className="p-2 text-dark">Speakers</h5>
                             <div className="where py-4 pl-5 text-white">
                                 30 speakers<br/>
                                 &nbsp;<br/>
@@ -131,7 +131,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-white">Stands</h5>
+                            <h5 className="p-2 text-dark">Stands</h5>
                             <div className="where py-4 pl-5 text-white">
                                 29 stands<br/>
                                 &nbsp;<br/>
@@ -146,7 +146,7 @@ const Root: React.FC = () => {
             <div className="container fifth pt-5 pb-4 text-center">
                 <div className="row">
                     <div className="col-md-6 where text-right text-white pr-5">
-                        <h2>Questions?</h2>
+                        <h3>Questions?</h3>
                     </div>
                     <div className="col-md-6 where text-left text-white">
                         <p>Do not hesitate to contact us if you have any questions. Contact us by
@@ -162,14 +162,14 @@ const Root: React.FC = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-6 where text-right text-white pr-5">
-                        <h2>Organizers</h2>
+                        <h3>Organizers</h3>
                     </div>
                     <div className="col-md-6 where text-left text-white">
                         <p>TDC is organize by people from the IT-community in Trondheim, mostly as a cooperation between
                             the many meetups in the area.</p>
 
                         <p>The members of the 2019 Program Commitee are:</p>
-                        <ul>
+                        <ul className="members">
                             <li>Alexander Samsig (javaBin)</li>
                             <li>Anders Aabakken (NNUG)</li>
                             <li>Anders Kringstad (Dataforeningen)</li>

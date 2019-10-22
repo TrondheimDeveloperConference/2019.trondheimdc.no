@@ -9,6 +9,8 @@
  * TDC light purple: #bdaad2
  */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 /*
  * Main
  */
@@ -19,9 +21,9 @@ html {
 
 body {
   background-color: #292929;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro";
   margin-bottom: 200px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 a {
@@ -32,6 +34,18 @@ a {
 a:hover {
   color: #FFF;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 h5 {
@@ -118,6 +132,26 @@ h5 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  padding: 120px 0 120px 0;
+  margin-bottom: 100px;
+}
+
+.members ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.members li {
+  list-style: none;
+  text-indent: -1em;
+}
+
+.members li:before {
+  color: #f38274;
+  content: "\2014";
+  padding-right: 10px;
+  padding-left: 5px;
 }
 
 .footer {
@@ -171,6 +205,19 @@ nav .navbar-nav li a{
   background: #80BE8A;
 }
 
+.btn-primary {
+  font-size: 1.3em;
+  border: 0px;
+  background: #A9DDB1;
+  transition: all 0.3s ease 0s;
+  margin: 3px 3px;
+  padding: 0px 4px;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #88ba90;
+}
 
 .calendar-event {
   background-color: #807bb9;
