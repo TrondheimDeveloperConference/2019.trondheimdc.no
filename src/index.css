@@ -29,6 +29,7 @@ body {
 a {
   color: #f38274;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 a:hover {
