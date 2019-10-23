@@ -27,7 +27,7 @@ const Root: React.FC = () => {
                         <h5 className="text-left text-white">NOT LONG NOW!</h5>
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
-                        <h1>Get your tickets now!</h1>
+                        <h2>Get your tickets now!</h2>
                         <h5 className="text-white"><a href='https://tdc.hoopla.no/sales/tdc2019'>Tickets</a> for TDC 2019
                         are almost sold out!</h5>
                         <p>Check out <Link to="/program">this years program</Link>, and get your tickets before it is too late!</p>
