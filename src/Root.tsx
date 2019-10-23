@@ -149,11 +149,11 @@ const Root: React.FC = () => {
                         <h3>Questions?</h3>
                     </div>
                     <div className="col-md-6 where text-left text-white">
-                        <p>Do not hesitate to contact us if you have any questions. Contact us by
-                            <a href="mailto:connect@trondheimdc.no">email</a>,
-                            <a href="https://www.facebook.com/TDConf">Facebook</a> or
-                            <a href="https://twitter.com/TrondheimDC">Twitter</a>
-                            and we we'll try our best to
+                        <p>Do not hesitate to contact us if you have any questions.
+                            Contact us by <a href="mailto:connect@trondheimdc.no">email</a>,
+                            &nbsp;<a href="https://www.facebook.com/TDConf">Facebook</a> or
+                            &nbsp;<a href="https://twitter.com/TrondheimDC">Twitter</a>
+                            &nbsp; and we we'll try our best to
                             give you an answer.
                         </p>
 
