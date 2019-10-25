@@ -132,11 +132,11 @@ export default class App extends PureComponent<Props, State> {
                             </div>
                             <div className="overflow-hidden text-center my-auto text-dark mt-4">
                                 <a href="https://www.facebook.com/TDConf"><img src={facebook} alt="Facebook"
-                                                                               className="img-fluid mx-2" width="5%"/></a>
+                                                                               className="img-fluid mx-2 social" width="5%"/></a>
                                 <a href="https://twitter.com/TrondheimDC"><img src={twitter} alt="Twitter"
-                                                                               className="img-fluid mx-2" width="5%"/></a>
+                                                                               className="img-fluid mx-2 social" width="5%"/></a>
                                 <a href="mailto:connect@trondheimdc.no"><img src={email} alt="Email"
-                                                                             className="img-fluid mx-2" width="5%"/></a>
+                                                                             className="img-fluid mx-2 social" width="5%"/></a>
                             </div>
                         </div>
                     </div>

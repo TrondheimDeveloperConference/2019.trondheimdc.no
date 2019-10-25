@@ -2,6 +2,7 @@ import React from 'react';
 
 import tdc_jumbotron from './media/img/jumbotron/tdc_jumbotron.png';
 import bg2 from './media/img/bg2.png';
+import calendar from './media/img/calendar.svg';
 import index01 from './media/img/index/index_01.jpg';
 import index03 from './media/img/index/index_03.jpg';
 import dataforeningen from './media/img/index/dataforeningen.svg';
@@ -105,7 +106,8 @@ const Root: React.FC = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-dark">Where?</h5>
+                            <h5 className="p-2 text-dark">
+                                <img src={calendar} className="img-fluid align-top" width="8%" alt='Dataforeningen'/>&nbsp;Where?</h5>
 
                             <div className="where py-4 pl-5 text-white">
                                 Clarion Congress<br/>
@@ -116,7 +118,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-dark">When?</h5>
+                            <h5 className="p-2 text-dark"><img src={calendar} className="img-fluid align-top" width="8%" alt='Dataforeningen'/>&nbsp;When?</h5>
                             <div className="where py-4 pl-5 text-white">
                                 October 28.<br/>
                                 2019,<br/>
@@ -126,7 +128,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-dark">Speakers</h5>
+                            <h5 className="p-2 text-dark"><img src={calendar} className="img-fluid align-top" width="8%" alt='Dataforeningen'/>&nbsp;Speakers</h5>
                             <div className="where py-4 pl-5 text-white">
                                 30 speakers<br/>
                                 &nbsp;<br/>
@@ -136,7 +138,7 @@ const Root: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-md-3 where text-left">
-                            <h5 className="p-2 text-dark">Stands</h5>
+                            <h5 className="p-2 text-dark"><img src={calendar} className="img-fluid align-top" width="8%" alt='Dataforeningen'/>&nbsp;Stands</h5>
                             <div className="where py-4 pl-5 text-white">
                                 29 stands<br/>
                                 &nbsp;<br/>

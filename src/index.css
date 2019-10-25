@@ -54,7 +54,13 @@ h5 {
   font-weight: bold;
 }
 
+.partners-logo img:hover {
+  filter: invert(20%);
+}
 
+.social:hover {
+  filter: invert(30%);
+}
 
 #index .first {
   min-height: 350px;
@@ -70,10 +76,10 @@ h5 {
 }
 
 #index .third {
-  background-image: url('/media/img/bg.png');
+  background: url('./media/img/bg.png');
+  background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 12%;
+  background-size: 18%;
   background-color: #6a64a2;
   /*border-bottom: 40px solid #807bb9;*/
 }
@@ -126,7 +132,6 @@ h5 {
 
 .jumbotron {
   border-radius: 0;
-  background-color: #292929;
   background: url('./media/img/jumbotron/bg_jumbotron.jpg') no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -144,7 +149,7 @@ h5 {
 
 .members li {
   list-style: none;
-  text-indent: -1em;
+  text-indent: -2.4em;
 }
 
 .members li:before {
@@ -278,7 +283,7 @@ nav .navbar-nav li a{
 }
 
 @media (max-width: 768px) {
-    .partner-img {
+  .partner-img {
     width:60%;
     display: block;
     margin-left: auto;
@@ -286,7 +291,18 @@ nav .navbar-nav li a{
   }
   .jumbotron {
     margin-bottom: 10px;
-  }  
+  }
+  #index .third {
+    background: none;
+    background-color: #6a64a2;
+  }
+}
+
+@media (max-width: 1366px) {
+  #index .third {
+    background: none;
+    background-color: #6a64a2;
+  }
 }
 
 .overflow-hidden { overflow: hidden; }

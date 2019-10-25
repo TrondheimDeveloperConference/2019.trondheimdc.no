@@ -78,112 +78,112 @@ const Partners = () => {
             <div className="container-fluid third py-5">
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
-                        <div className="col-lg-2 col-md-4 my-2 ">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo partners-logo">
                             <a href="https://www.bekk.no/">
                                 <img src={bekk} alt='bekk' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo partners-logo">
                             <a href="https://www.bouvet.no/">
                                 <img src={bouvet} alt='bouvet' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo partners-logo">
                             <a href="https://www.centric.eu/">
                                 <img src={centric} alt='centric' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.acando.no/">
                                 <img src={cgi} alt='cgi' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.dips.com/no">
                                 <img src={dips} alt='dips' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.evry.no/">
                                 <img src={evry} alt='evry' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.equinor.com/">
                                 <img src={equinor} alt='equinor' className="img-fluid partner-img" />
                             </a>
                         </div>                        
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://fjelltoppmedia.no/">
                                 <img src={fjelltopmedia} alt='fjelltopmedia' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.glasspaper.no/">
                                 <img src={glasspaper} alt='glasspaper' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.itema.no/">
                                 <img src={itema} alt='itema' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://itsjefen.no/">
                                 <img src={itsjefen} alt='itsjefen' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.knowit.no/">
                                 <img src={knowit} alt='knowit' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.kantega.no">
                                 <img src={kantega} alt='Kantega' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.lindbak.no/">
                                 <img src={lindbak} alt='lindbak' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.microsoft.com/nb-no">
                                 <img src={microsoft} alt='microsoft' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://programutvikling.no">
                                 <img src={programutvikling} alt='programutvikling' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.signicat.no/">
                                 <img src={signicat} alt='signicat' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.sportradar.com/">
                                 <img src={sportradar} alt='sportradar' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.sticos.no/">
                                 <img src={sticos} alt='sticos' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.uninett.no/">
                                 <img src={uninett} alt='uninett' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.variant.no/">
                                 <img src={variant} alt='variant' className="img-fluid partner-img" />
                             </a>
                         </div>
-                        <div className="col-lg-2 col-md-4 my-2">
+                        <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://www.webstep.no/">
                                 <img src={webstep} alt='webstep' className="img-fluid partner-img" />
                             </a>
