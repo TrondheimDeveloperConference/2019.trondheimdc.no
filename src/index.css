@@ -54,9 +54,7 @@ h5 {
   font-weight: bold;
 }
 
-.container {
-  
-}
+
 
 #index .first {
   min-height: 350px;
@@ -185,7 +183,7 @@ nav .navbar-nav li a{
   text-transform: uppercase;
 }
 
-.navbar-expand-lg {
+.navbar-opacity {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);

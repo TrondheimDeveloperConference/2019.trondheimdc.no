@@ -48,11 +48,13 @@ export default class App extends PureComponent<Props, State> {
         const collapsedClass = this.state.expanded ? '' : 'collapsed';
         return (
             <Router>
-                <Navbar expand='lg' sticky='top' variant='dark' expanded={this.state.expanded} >
-                    <Navbar.Brand href="/" className='d-block d-sm-none' />
+                <Navbar sticky="top" expand="lg" expanded={this.state.expanded} className="navbar navbar-opacity navbar-dark text-center mx-auto py-3">
+                    <Navbar.Brand>
+                        <a href="/" className="navbar-brand d-block d-lg-none"><img src={tdc_menu} alt="TDC"  /></a>
+                    </Navbar.Brand>
                     <button type="button" aria-label="Toggle navigation"
                             ref={this.myRef}
-                            className={`navbar-toggler ${collapsedClass}`}
+                            className={`navbar-toggler ${collapsedClass} custom-toggler`}
                             onClick={() => this.collapseMenu()}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -76,7 +78,7 @@ export default class App extends PureComponent<Props, State> {
                                 </Link>
                             </li>
                             <li className="nav-item align-self-center mx-4">
-                                <Link className="nav-link"
+                                <Link className="nav-link d-none d-lg-block"
                                       to="/"
                                       onClick={() => this.collapseMenu()}>
                                     <img src={tdc_menu} alt=''/>
