@@ -75,11 +75,11 @@ export default class Program extends React.PureComponent<ProgramProps, ProgramSt
                     </div>
                 </div>
             </section>
-            <div className="container text-white py-4">
+            <div className="container text-white p-0">
                 <FilterContainer filter={this.state.filter}
                                  updateFilter={(filter: Filter) => this.setState({filter})}/>
             </div>
-            <div className="container text-white py-4">
+            <div className="container text-white  py-5">
                 {this.getContent(this.state)}
             </div>
         </>
@@ -169,55 +169,65 @@ function Day(props: DayProps) {
     const timeSlots = groupByTimeSlot(filteredList);
     return (
         filteredList.length > 0 ?
-            <div>
-                <h2>{props.title}</h2>
-                {Object
-                    .keys(timeSlots)
-                    .map((timeSlot, idx) => {
-                        return <div key={timeSlot + idx}>
-                            <h3>{timeSlot.substr(-5)}</h3>
-                            {timeSlots[timeSlot]
-                                .map((session, idx) => {
-                                    const isFavorite = props.favorites.indexOf(session.sessionId) !== -1;
-                                    const fav = isFavorite ? 'favourite' : '';
-                                    return (
-                                        <div key={session.sessionId}
-                                             className={`row row-striped calendar-event my-5 py-3 align-items-center ${fav}`}>
-                                            <div className='col-md-11 col-sm-10'>
-                                                <h4 className='text-uppercase'>
-                                                    <Link to={`/program/${session.sessionId}`}>
-                                                        <strong>{session.title}</strong>
-                                                    </Link>
-                                                </h4>
-                                                <ul className='list-inline'>
-                                                    <li className='list-inline-item'>
-                                                        <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
-                                                        {session.length} minutes
-                                                    </li>
-                                                    <li className='list-inline-item'>
-                                                        <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
-                                                        {session.room}
-                                                    </li>
-                                                    <li className='list-inline-item'>
-                                                        <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
-                                                        {session.language === "en" ? "English" : "Norwegian"}
-                                                    </li>
-                                                    {session.speakers.map(speaker => (
-                                                        <li key={speaker.name} className='list-inline-item'>
-                                                            <FontAwesomeIcon icon={faUser} aria-hidden='true'/>
-                                                            {speaker.name}
-                                                        </li>))}
-                                                </ul>
-                                            </div>
-                                            <div className='col-md-1 col-sm-2 program-favorite-button'>
-                                                <button onClick={() => {props.addToFav(session.sessionId)}}>
-                                                    {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
-                                                </button>
-                                            </div>
-                                        </div>)
-                                })}
-                        </div>
-                    })}
+            <div className="container m-0 p-0">
+                <div className="row">
+                    <div className="col-md-12">
+                        <h2 className="m-0 p-0">{props.title}</h2>
+                    </div>
+                </div>
+                        {Object
+                            .keys(timeSlots)
+                            .map((timeSlot, idx) => {
+                                return <div className="row" key={timeSlot + idx}>
+                                    <div className={`col-md-12`}>
+                                        <h3>{timeSlot.substr(-5)}</h3>
+                                    </div>                             
+                                    {timeSlots[timeSlot]
+                                        .map((session, idx) => {
+                                            const isFavorite = props.favorites.indexOf(session.sessionId) !== -1;
+                                            const fav = isFavorite ? 'favourite' : '';
+                                            return (
+
+                                        
+                                                <div key={session.sessionId}
+                                                     className={`row calendar-event mt-2 mb-5 py-3  ${fav}`}>
+                                                    <div className='col-md-11 col-sm-10'>
+                                                        <h4 className='text-uppercase'>
+                                                            <Link to={`/program/${session.sessionId}`}>
+                                                                <strong>{session.title}</strong>
+                                                            </Link>
+                                                        </h4>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
+                                                                &nbsp;{session.length} minutes
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
+                                                                &nbsp;{session.room}
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
+                                                                &nbsp;{session.language === "en" ? "English" : "Norwegian"}
+                                                            </li>
+                                                            {session.speakers.map(speaker => (
+                                                                <li key={speaker.name} className='list-inline-item'>
+                                                                    <FontAwesomeIcon icon={faUser} aria-hidden='true'/>
+                                                                    &nbsp;{speaker.name}
+                                                                </li>))}
+                                                        </ul>
+                                                    </div>
+                                                    <div className='col-md-1 col-sm-2 program-favorite-button'>
+                                                        <button onClick={() => {props.addToFav(session.sessionId)}}>
+                                                            {isFavorite ? <CheckCircle size={32} /> : <Circle size={32} />}
+                                                        </button>
+                                                    </div>
+                                                </div>)
+                                        })}
+                                </div>
+                            })}
+                       
+
             </div> : null
     );
 }

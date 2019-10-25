@@ -95,33 +95,37 @@ const SessionContent: React.FC<SCP> = (props) => {
     const {session} = props;
     return (<div>
         <div className="container first mb-5">
-            <h1 className="text-white">{session.title}</h1>
-            <div className="row justify-content-center pt-4">
-                <div className='col-2'>
-                    <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
-                    {session.length} minutes
-                </div>
-                <div className='col-2'>
-                    <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
-                    {session.room}
-                </div>
-                <div className='col-2'>
-                    <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
-                    {session.language === "en" ? "English" : "Norwegian"}
+            <div className="row">
+                <div className="col-md-12 text-center">
+                    <h1 className="text-white">{session.title}</h1>
                 </div>
             </div>
-            <div className="d-md-flex flex-md-equal pt-4">
-                <div className="row justify-content-center text-white">
+            <div className="row text-center mt-5 mb-5">
+                <div className='col-md-4'>
+                    <FontAwesomeIcon icon={faStopwatch} aria-hidden='true'/>
+                    &nbsp;{session.length} minutes
+                </div>
+                <div className='col-md-4'>
+                    <FontAwesomeIcon icon={faLocationArrow} aria-hidden='true'/>
+                    &nbsp;{session.room}
+                </div>
+                <div className='col-md-4'>
+                    <FontAwesomeIcon icon={faGlobeEurope} aria-hidden='true'/>
+                    &nbsp;{session.language === "en" ? "English" : "Norwegian"}
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12 text-center text-white">
                     <p>{session.abstract}</p>
 
                     <h2>Indended audience</h2>
                     <p>{session.intendedAudience}</p>
                 </div>
             </div>
-            <div className="d-md-flex flex-md-equal pt-4">
-                {session.speakers.map(speaker => (
-                    <div key={speaker.name}>
-                        <div className='row justify-content-center'>
+            {session.speakers.map(speaker => (
+                <div key={speaker.name}>
+                    <div className="row mb-3" >
+                        <div className="col-md-12 text-center">
                             <h2>
                                 <span className='mr-2'>{speaker.name}</span>
                                 <a href={`https://twitter.com/${speaker.twitter}`}>
@@ -129,14 +133,18 @@ const SessionContent: React.FC<SCP> = (props) => {
                                 </a>
                             </h2>
                         </div>
-                        <div className='row'>
-                            <img className='col-md-6'
-                                src={speaker.pictureUrl} alt={speaker.name}/>
-                            <p className='col-md-6'>{speaker.bio}</p>
-                        </div>
                     </div>
-                ))}
-            </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <img className='img-fluid' src={speaker.pictureUrl} alt={speaker.name}/>
+                        </div>
+                        <div className="col-md-6 text-left">
+                            <p>{speaker.bio}</p>
+                        </div>                
+                    </div>
+                </div>
+            ))}          
+
         </div>
     </div>);
 };

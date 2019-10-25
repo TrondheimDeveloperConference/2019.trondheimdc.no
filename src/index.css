@@ -17,6 +17,7 @@
 html {
   position: relative;
   min-height: 93%;
+
 }
 
 body {
@@ -54,7 +55,7 @@ h5 {
 }
 
 .container {
-  max-width: 100%px;
+  
 }
 
 #index .first {
@@ -112,6 +113,7 @@ h5 {
   background-color: #363636;
   margin: 0;
   border-radius: 0 0 40px 40px;
+  font-size: 26px;
 }
 
 .rounded div {
@@ -181,7 +183,6 @@ h5 {
  */
 nav .navbar-nav li a{
   text-transform: uppercase;
-  font-family: sans-serif;
 }
 
 .navbar-expand-lg {
@@ -219,12 +220,24 @@ nav .navbar-nav li a{
   background: #88ba90;
 }
 
+.calendar-event a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .calendar-event {
-  background-color: #807bb9;
+  width:100%;
+  margin-left: 15px;
+  background-color: #6A63A0;
 }
 
 .favourite.calendar-event {
     background-color: #80BE8A;
+    color: #292929;
+}
+
+.favourite.calendar-event a{
+    color: #292929;
 }
 
 .favourite h4 a {
@@ -266,6 +279,18 @@ nav .navbar-nav li a{
   }
 }
 
+@media (max-width: 768px) {
+    .partner-img {
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jumbotron {
+    margin-bottom: 10px;
+  }  
+}
+
 .overflow-hidden { overflow: hidden; }
 
 .bd-placeholder-img {
@@ -277,3 +302,8 @@ nav .navbar-nav li a{
   user-select: none;
 }
 
+nav .navbar-nav li a{
+  color: #FFF !important;
+  text-decoration: none;
+  font-size: 20px;
+}

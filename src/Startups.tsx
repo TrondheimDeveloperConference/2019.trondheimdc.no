@@ -14,10 +14,10 @@ const Startups: React.FC = () => {
               </div>
           </section>
           <div id="index">
-              <div className="container first mb-5">
+              <div className="container first mb-5 pb-5">
                   <div className="d-md-flex flex-md-equal">
                       <div className="col-md-6">
-                          <h2 className="text-right pr-5 pt-4 text-white">Register your interest</h2>
+                          <h2 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Register your interest</h2>
                       </div>
                       <div className="col-md-6 text-left text-white mt-4">
                           <p>Fill out <a
@@ -27,7 +27,7 @@ const Startups: React.FC = () => {
                   </div>
                   <div className="d-md-flex flex-md-equal">
                       <div className="col-md-6">
-                          <h2 className="text-right pr-5 pt-4 text-white">Startups</h2>
+                          <h2 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Startups</h2>
                       </div>
                       <div className="col-md-6 text-left text-white mt-4">
                           <p>Every year we support the local entrepreneurial ecosystem. We gladly sponsor stands for
