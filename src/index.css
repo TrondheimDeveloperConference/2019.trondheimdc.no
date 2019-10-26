@@ -219,6 +219,11 @@ nav .navbar-nav li a{
   color: #000;
 }
 
+.program-filter-button.selected {
+    background: #6A63A0;
+    color: #ffffff;
+}
+
 .btn-primary:hover {
   background: #88ba90;
 }

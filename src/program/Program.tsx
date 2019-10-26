@@ -181,14 +181,14 @@ function Day(props: DayProps) {
                                 return <div className="row" key={timeSlot + idx}>
                                     <div className={`col-md-12`}>
                                         <h3>{timeSlot.substr(-5)}</h3>
-                                    </div>                             
+                                    </div>
                                     {timeSlots[timeSlot]
                                         .map((session, idx) => {
                                             const isFavorite = props.favorites.indexOf(session.sessionId) !== -1;
                                             const fav = isFavorite ? 'favourite' : '';
                                             return (
 
-                                        
+
                                                 <div key={session.sessionId}
                                                      className={`row calendar-event mt-2 mb-5 py-3  ${fav}`}>
                                                     <div className='col-md-11 col-sm-10'>
@@ -226,7 +226,7 @@ function Day(props: DayProps) {
                                         })}
                                 </div>
                             })}
-                       
+
 
             </div> : null
     );
@@ -246,25 +246,28 @@ interface FilterProps {
     updateFilter: (filter: Filter) => void
 }
 function FilterContainer (props: FilterProps) {
+    const {language, format} = props.filter;
     return (
         <div className="program-filter container">
             <div className="row">
                 <div className="col-md-6">
                     <div className="program-filter-header">Language</div>
                     <div className="program-filter-button-group">
-                        <button className="program-filter-button btn btn-primary" onClick={(e) => {
+                        <button className={`program-filter-button btn btn-primary ${language === 'both' ? 'selected' : ''}`}
+                                onClick={(e) => {
                             const {filter} = props;
                             props.updateFilter(filter.withLanguage('both'))
                         }}>
                             Both
                         </button>
-                        <button className="program-filter-button btn btn-primary" onClick={(e) => {
+                        <button className={`program-filter-button btn btn-primary ${language === 'no' ? 'selected' : ''}`}
+                                onClick={(e) => {
                             const {filter} = props;
                             props.updateFilter(filter.withLanguage('no'))
                         }}>
                             Norwegian
                         </button>
-                        <button className="program-filter-button btn btn-primary"
+                        <button className={`program-filter-button btn btn-primary ${language === 'en' ? 'selected' : ''}`}
                                 onClick={(e) => {
                                     const {filter} = props;
                                     props.updateFilter(filter.withLanguage('en'))
@@ -278,28 +281,28 @@ function FilterContainer (props: FilterProps) {
                 <div className="col-md-6">
                 <div className="program-filter-header">Format</div>
                 <div className="program-filter-button-group">
-                    <button className="program-filter-button btn btn-primary"
+                    <button className={`program-filter-button btn btn-primary ${format === 'all' ? 'selected' : ''}`}
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('all'))
                             }}>
                         All
                     </button>
-                    <button className="program-filter-button btn btn-primary"
+                    <button className={`program-filter-button btn btn-primary ${format === 'presentation' ? 'selected' : ''}`}
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('presentation'))
                             }}>
                         Presentations
                     </button>
-                    <button className="program-filter-button btn btn-primary"
+                    <button className={`program-filter-button btn btn-primary ${format === 'workshop' ? 'selected' : ''}`}
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('workshop'))
                             }}>
                         Workshops
                     </button>
-                    <button className="program-filter-button btn btn-primary"
+                    <button className={`program-filter-button btn btn-primary ${format === 'fav' ? 'selected' : ''}`}
                             onClick={(e) => {
                                 const {filter} = props;
                                 props.updateFilter(filter.withFormat('fav'))
