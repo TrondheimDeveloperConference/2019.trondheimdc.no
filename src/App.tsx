@@ -19,6 +19,7 @@ import Program from "./program/Program";
 import Session from './program/Session';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from "react-bootstrap/Nav";
+import ScrollToTop from "./ScrollToTop";
 
 interface Props { }
 interface State {
@@ -48,6 +49,7 @@ export default class App extends PureComponent<Props, State> {
         const collapsedClass = this.state.expanded ? '' : 'collapsed';
         return (
             <Router>
+                <ScrollToTop />
                 <Navbar sticky="top" expand="lg" expanded={this.state.expanded} className="navbar navbar-opacity navbar-dark text-center mx-auto py-3">
                     <Navbar.Brand>
                         <a href="/" className="navbar-brand d-block d-lg-none"><img src={tdc_menu} alt="TDC"  /></a>
