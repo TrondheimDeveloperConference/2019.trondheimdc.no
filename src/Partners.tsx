@@ -54,9 +54,9 @@ const Partners = () => {
                         <h2 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Last three year: Completely. Sold. Out.</h2>
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
-                        <p>Last year, more than 800 people attended Trondheim Developer Conference. This was also the
-                            third year where we were completely sold out of both tickets AND partner stands. Based on
-                            this and feedback from last year's partners we‘ve got a feeling that we might sell out this
+                        <p>Last year, more than 700 people attended Trondheim Developer Conference.
+                            This was also the third year where we were completely sold out of both tickets AND partner stands.
+                            Based on this and feedback from last year's partners we‘ve got a feeling that we might sell out this
                             year as well. So don‘t wait around if you want to be part of TDC 2019!</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const Partners = () => {
                             <a href="https://www.equinor.com/">
                                 <img src={equinor} alt='equinor' className="img-fluid partner-img" />
                             </a>
-                        </div>                        
+                        </div>
                         <div className="col-lg-2 col-md-4 my-2 partners-logo">
                             <a href="https://fjelltoppmedia.no/">
                                 <img src={fjelltopmedia} alt='fjelltopmedia' className="img-fluid partner-img" />
