@@ -130,7 +130,7 @@ export default class App extends PureComponent<Props, State> {
                     <div className="container-fluid footer-lightgreen">
                         <div className="d-md-flex flex-md-equal">
                             <div className="overflow-hidden text-center">
-                                <img src={tdc_grayscale} alt=''/>
+                                <img src={tdc_grayscale} alt='' className="img-fluid"/>
                             </div>
                             <div className="overflow-hidden text-center my-auto text-dark mt-4">
                                 <a href="https://www.facebook.com/TDConf"><img src={facebook} alt="Facebook"

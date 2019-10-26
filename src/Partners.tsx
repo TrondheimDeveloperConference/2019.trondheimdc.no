@@ -33,7 +33,7 @@ const Partners = () => {
 
             <div className="container text-left d-md-flex flex-md-equal">
                 <div className="overflow-hidden">
-                    <img src={partners_jumbotron} className="img-fluid partner-img" alt='' />
+                    <img src={partners_jumbotron} className="img-fluid" alt='' />
                 </div>
             </div>
         </section>,
