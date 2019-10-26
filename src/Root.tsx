@@ -42,6 +42,9 @@ const Root: React.FC = () => {
                             In addition, we also offered a selection of 9 workshops held on the day after the conference.</p>
 
                         <p>We would not be what we are today without YOU! Thank you for your support and contributions over the years.</p>
+
+                        <h2><a href='https://tdc.hoopla.no/sales/tdc2019'>Get your tickets now!</a></h2>
+                        <p>The last three years the conference has been sold out, so don't wait too long!</p>
                     </div>
                 </div>
             </div>
@@ -55,8 +58,7 @@ const Root: React.FC = () => {
                         <p>The <Link to="/program">program for TDC 2019</Link> consists of multiple tracks for
                             front-end, back-end, agile developers, and
                             digital design. The conference strives to reach a balance between local, national and
-                            international speakers, and a relatively large share of call-for-presentation
-                            submissions.
+                            international speakers, and call-for-presentation submissions.
                         </p>
 
                         <p>TDC is a noncommercial event where all profit goes towards next years conference and other

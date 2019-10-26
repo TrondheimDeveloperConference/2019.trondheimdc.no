@@ -18,6 +18,7 @@ echo "Starting deploy"
 
 cp build/index.html build/program.html
 cp build/index.html build/partners.html
+cp build/index.html build/tickets.html
 cp build/index.html build/startups.html
 cp build/index.html build/conduct.html
 cp build/index.html build/404.html
