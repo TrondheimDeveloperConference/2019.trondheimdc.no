@@ -16,16 +16,14 @@ fi;
 
 echo "Starting deploy"
 
-mkdir -p dist/assets
-cp -r app/assets/favicons dist/assets/
-cp dist/index.html dist/info.html
-cp dist/index.html dist/tickets.html
-cp dist/index.html dist/program.html
-cp dist/index.html dist/partners.html
-cp dist/index.html dist/startups.html
-cp dist/index.html dist/conduct.html
-cp dist/index.html dist/404.html
-cp -R dist $HOME/dist
+cp build/index.html build/program.html
+cp build/index.html build/partners.html
+cp build/index.html build/tickets.html
+cp build/index.html build/startups.html
+cp build/index.html build/conduct.html
+cp build/index.html build/404.html
+
+cp -R build $HOME/dist
 
 cd $HOME
 git config --global user.email "travic@travis-ci.org"
@@ -38,6 +36,9 @@ else
 fi;
 
 cd 2019.trondheimdc.no
+rm -rf *
+git checkout CNAME
+
 cp -R $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
