@@ -65,12 +65,13 @@ const Root: React.FC = () => {
                         <a href="https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim">
                             <img src={dataforeningen} className="img-fluid" width="15%" alt='Dataforeningen'/>
                         </a>
-                        <a href="http://www.meetup.com/IXDATrondheim/">
-                            <img src={ixda} className="img-fluid" width="18%" alt='IXDA'/></a>
-                        <a href="http://www.meetup.com/javaBin-Trondheim/">
+                        <a href="https://www.meetup.com/IXDATrondheim/">
+                            <img src={ixda} className="img-fluid" width="18%" alt='IxDA'/>
+                        </a>
+                        <a href="https://www.meetup.com/javaBin-Trondheim/">
                             <img src={javabin} className="img-fluid" width="22%" alt='javaBin'/>
                         </a>
-                        <a href="http://www.meetup.com/nnug-trondheim/">
+                        <a href="https://www.meetup.com/nnug-trondheim/">
                             <img src={nnug} className="img-fluid" width="20%" alt='NNUG'/>
                         </a>
                         <a href="https://spillmakerlauget.no/">
@@ -188,19 +189,19 @@ const Root: React.FC = () => {
 
                         <p>The members of the 2019 Program Commitee are:</p>
                         <ul className="members">
-                            <li>Alexander Samsig (javaBin)</li>
-                            <li>Anders Aabakken (NNUG)</li>
-                            <li>Anders Kringstad (Dataforeningen)</li>
-                            <li>Hanne Bårdsen (Dataforeningen)</li>
-                            <li>Iver Jordal (Trondheim Machine Learning Meetup)</li>
-                            <li>Ketil Ingebrigtsen (Dataforeningen)</li>
-                            <li>Kristina Brend (Dataforeningen)</li>
-                            <li>Marvin Bredal Lillehaug (javaBin)</li>
-                            <li>Morten Moen (NNUG)</li>
-                            <li>Pål Fossmo (NNUG)</li>
-                            <li>Ronny Anderssen (Spillmakerlauget)</li>
-                            <li>Save Asmervik (Dataforeningen)</li>
-                            <li>Tina Haaskjold Behrens (IxDA)</li>
+                            <li>Alexander Samsig (<a href="http://www.meetup.com/javaBin-Trondheim/">javaBin</a>)</li>
+                            <li>Anders Aabakken (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
+                            <li>Anders Kringstad (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
+                            <li>Hanne Bårdsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
+                            <li>Iver Jordal (<a href={'https://www.meetup.com/Trondheim-Machine-Learning-Meetup/'}>Trondheim Machine Learning Meetup</a>)</li>
+                            <li>Ketil Ingebrigtsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
+                            <li>Kristina Brend (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
+                            <li>Marvin Bredal Lillehaug (<a href="http://www.meetup.com/javaBin-Trondheim/">javaBin</a>)</li>
+                            <li>Morten Moen (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
+                            <li>Pål Fossmo (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
+                            <li>Ronny Anderssen (<a href='https://spillmakerlauget.no/'>Spillmakerlauget</a>)</li>
+                            <li>Save Asmervik (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
+                            <li>Tina Haaskjold Behrens (<a href='https://www.meetup.com/IXDATrondheim/'>IxDA</a>)</li>
                         </ul>
                     </div>
                 </div>
