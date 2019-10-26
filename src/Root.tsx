@@ -192,7 +192,7 @@ const Root: React.FC = () => {
                             <li>Anders Aabakken (NNUG)</li>
                             <li>Anders Kringstad (Dataforeningen)</li>
                             <li>Hanne Bårdsen (Dataforeningen)</li>
-                            <li>Iver Jordal (Trondheim Machine Learning)</li>
+                            <li>Iver Jordal (Trondheim Machine Learning Meetup)</li>
                             <li>Ketil Ingebrigtsen (Dataforeningen)</li>
                             <li>Kristina Brend (Dataforeningen)</li>
                             <li>Marvin Bredal Lillehaug (javaBin)</li>
@@ -200,7 +200,7 @@ const Root: React.FC = () => {
                             <li>Pål Fossmo (NNUG)</li>
                             <li>Ronny Anderssen (Spillmakerlauget)</li>
                             <li>Save Asmervik (Dataforeningen)</li>
-                            <li>Tina Haaskjold Behrens (IXDA)</li>
+                            <li>Tina Haaskjold Behrens (IxDA)</li>
                         </ul>
                     </div>
                 </div>
