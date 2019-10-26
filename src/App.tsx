@@ -20,6 +20,7 @@ import Session from './program/Session';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from "react-bootstrap/Nav";
 import ScrollToTop from "./ScrollToTop";
+import Tickets from "./Tickets";
 
 interface Props { }
 interface State {
@@ -80,6 +81,13 @@ export default class App extends PureComponent<Props, State> {
                                 </Link>
                             </li>
                             <li className="nav-item align-self-center mx-4">
+                                <Link className="nav-link"
+                                      to="/tickets"
+                                      onClick={() => this.collapseMenu()}>
+                                    Tickets
+                                </Link>
+                            </li>
+                            <li className="nav-item align-self-center mx-4">
                                 <Link className="nav-link d-none d-lg-block"
                                       to="/"
                                       onClick={() => this.collapseMenu()}>
@@ -115,6 +123,9 @@ export default class App extends PureComponent<Props, State> {
                     </Route>
                     <Route exact path="/partners">
                         <Partners />
+                    </Route>
+                    <Route exact path="/tickets">
+                        <Tickets />
                     </Route>
                     <Route exact path="/startups">
                         <Startups />
