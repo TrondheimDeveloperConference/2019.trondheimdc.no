@@ -118,8 +118,13 @@ const SessionContent: React.FC<SCP> = (props) => {
                 <div className="col-md-12 text-center text-white">
                     <p>{session.abstract}</p>
 
-                    <h2>Indended audience</h2>
-                    <p>{session.intendedAudience}</p>
+                    {
+                        session.intendedAudience.length > 1 &&
+                        (<>
+                            <h2>Indended audience</h2>
+                            <p>{session.intendedAudience}</p>
+                        </>)
+                    }
                 </div>
             </div>
             {session.speakers.map(speaker => (
@@ -140,10 +145,10 @@ const SessionContent: React.FC<SCP> = (props) => {
                         </div>
                         <div className="col-md-6 text-left">
                             <p>{speaker.bio}</p>
-                        </div>                
+                        </div>
                     </div>
                 </div>
-            ))}          
+            ))}
 
         </div>
     </div>);
