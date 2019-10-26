@@ -20,7 +20,7 @@ const Tickets: React.FC = () => {
                   <div className="d-md-flex flex-md-equal">
                       <div className="col-md-6">
                           <h2 className="text-right pr-5 pt-4 text-white">Tickets to TDC 2019</h2>
-                          <img src={bg3} className="img-fluid pr-5 pt-3 float-right" width="30%" />
+                          <img src={bg3} className="img-fluid pr-5 pt-3 float-right" width="30%" alt={''}/>
                       </div>
                       <div className="col-md-6 text-left text-white mt-4">
                           <p><a href="https://tdc.hoopla.no/sales/tdc2019">Tickets are available here!</a></p>
