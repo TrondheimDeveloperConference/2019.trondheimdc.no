@@ -26,17 +26,22 @@ const Root: React.FC = () => {
             <div className="container first mb-5">
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
-                        <h2 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Welcome to TDC 2019</h2>
+                        <h1 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Welcome to TDC 2019</h1>
                         <img src={bg2} className="img-fluid pr-5 pt-3 float-right" width="30%" alt='' />
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
-                        <p>Trondheim Developer Conference – A community-driven conference for people in the Trondheim region will be seven years old in 2019! Don’t miss out on a day of inspiring tech talks, a day of hands-on sessions, mingling, and a great party!</p>
+                        <p>Trondheim Developer Conference – A community-driven conference for people in the Trondheim
+                            region will be seven years old in 2019! Don’t miss out on a day of inspiring tech talks,
+                            a day of hands-on sessions, mingling, and a great party!</p>
 
-                        <p>TDC is organized by several of Trondheim's meetups. Our goal is to organize a community-driven conference for the regions developers where they can learn new things, share knowledge, and socialize.</p>
+                        <p>TDC is organized by several of Trondheim's meetups. Our goal is to organize a community-driven
+                            conference for the regions developers where they can learn new things, share knowledge, and socialize.</p>
 
-                        <p>We have been organizing TDC since 2012 and have been excited to watch the event grow bigger and better every year. In 2018 we hosted about 700 participants and 20 speakers across 5 parallel tracks. In addition, we also offered a selection of 9 workshops held on the day after the conference.</p>
+                        <p>We have been organizing TDC since 2012 and have been excited to watch the event grow bigger
+                            and better every year. In 2018 we hosted about 700 participants and 20 speakers across 5 parallel tracks.
+                            In addition, we also offered a selection of 9 workshops held on the day after the conference.</p>
 
-                        <p>We would not be what we are today without YOU! Thank you for your support and contributions over the years. Don’t procrastinate! Join your fellow developers at Trondheim Developer Conference on October 28th, 2019!</p>
+                        <p>We would not be what we are today without YOU! Thank you for your support and contributions over the years.</p>
                     </div>
                 </div>
             </div>
@@ -47,7 +52,7 @@ const Root: React.FC = () => {
                         <img src={index01} className="img-fluid mb-5 border-bottom-right" width="80%" alt=''/>
                     </div>
                     <div className="col-md-4 text-left text-white mt-0">
-                        <p>The <Link to="/program">program for TDC 2019</Link> will consists of multiple tracks for
+                        <p>The <Link to="/program">program for TDC 2019</Link> consists of multiple tracks for
                             front-end, back-end, agile developers, and
                             digital design. The conference strives to reach a balance between local, national and
                             international speakers, and a relatively large share of call-for-presentation
@@ -85,15 +90,21 @@ const Root: React.FC = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-left text-white">
-                            <h1>Welcome to TDC 2019</h1>
+                            <h2>A full day of knowledge</h2>
 
-                            <p>Trondheim Developer Conference - A community-driven conference for people in the
-                                Trondheim region will be seven years old in 2019! Don't miss out on a day of inspiring
-                                tech talks, a day of hans-on sessions, mingling, and a great party!</p>
+                            <p>A day full of talks from renowned Norwegian and international speakers,
+                                in varying formats and categories.</p>
 
-                            <p>TDC is organized by several of Trondheim's meetups. Our goal is to organize a
-                                community-driven conference for the regions developers where they can learn new things,
-                                share knowledge, and socialize.</p>
+                            <h2>An afterparty to remember</h2>
+                            <p>Trondheim Developer Conference's traditional party takes place on the evening after the conference.
+                                After a long day of unique learning experiences, it feels good to chill out with some good food and drink.
+                                The party offers a great chance to catch up with old friends, and meet new ones!!</p>
+
+                            <h2>Hands-on workshops</h2>
+                            <p>
+                                Do you prefer practical tasks more than theory?
+                                Take part in one of our great workshops and boost your knowledge and skills.
+                                Workshops will be held the day after the conference.</p>
                         </div>
                         <div className="col-md-6 ">
                             <img src={index03} className="img-fluid img" alt='' />
@@ -130,7 +141,7 @@ const Root: React.FC = () => {
                         <div className="col-md-3 where text-left">
                             <h5 className="p-2 text-dark"><img src={calendar} className="img-fluid align-top" width="8%" alt='Dataforeningen'/>&nbsp;Speakers</h5>
                             <div className="where py-4 pl-5 text-white">
-                                30 speakers<br/>
+                                28 speakers<br/>
                                 &nbsp;<br/>
                                 &nbsp;<br/>
                                 &nbsp;<br/>
@@ -172,7 +183,7 @@ const Root: React.FC = () => {
                         <h3>Organizers</h3>
                     </div>
                     <div className="col-md-6 where text-left text-white">
-                        <p>TDC is organize by people from the IT-community in Trondheim, mostly as a cooperation between
+                        <p>TDC is organized by people from the IT-community in Trondheim, mostly as a cooperation between
                             the many meetups in the area.</p>
 
                         <p>The members of the 2019 Program Commitee are:</p>
