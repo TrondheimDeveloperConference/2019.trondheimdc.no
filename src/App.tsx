@@ -58,7 +58,7 @@ export default class App extends PureComponent<Props, State> {
                             ref={this.myRef}
                             className={`navbar-toggler ${collapsedClass} custom-toggler`}
                             onClick={() => this.collapseMenu()}>
-                        <span className="navbar-toggler-icon"></span>
+                        <span className={`navbar-toggler-icon ${collapsedClass}`}></span>
                     </button>
 
                     {/*<NavbarToggle label='Toggle navigation' />*/}
