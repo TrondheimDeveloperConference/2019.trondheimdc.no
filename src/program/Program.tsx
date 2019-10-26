@@ -178,7 +178,7 @@ function Day(props: DayProps) {
                         {Object
                             .keys(timeSlots)
                             .map((timeSlot, idx) => {
-                                return <div className="row" key={timeSlot + idx}>
+                                return <div className="row calendar-row" key={timeSlot + idx}>
                                     <div className={`col-md-12`}>
                                         <h3>{timeSlot.substr(-5)}</h3>
                                     </div>

@@ -235,8 +235,13 @@ nav .navbar-nav li a{
 
 .calendar-event {
   width:100%;
-  padding-left: 15px;
+  margin-left: 15px;
   background-color: #6A63A0;
+}
+
+.calendar-row {
+    justify-content: center;
+    margin: 0;
 }
 
 .favourite.calendar-event {
