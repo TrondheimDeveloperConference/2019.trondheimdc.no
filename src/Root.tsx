@@ -191,19 +191,19 @@ const Root: React.FC = () => {
 
                         <p>The members of the 2019 Program Commitee are:</p>
                         <ul className="members">
-                            <li>Alexander Samsig (<a href="http://www.meetup.com/javaBin-Trondheim/">javaBin</a>)</li>
-                            <li>Anders Aabakken (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
-                            <li>Anders Kringstad (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
-                            <li>Hanne Bårdsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
-                            <li>Iver Jordal (<a href={'https://www.meetup.com/Trondheim-Machine-Learning-Meetup/'}>Trondheim Machine Learning Meetup</a>)</li>
-                            <li>Ketil Ingebrigtsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
-                            <li>Kristina Brend (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
-                            <li>Marvin Bredal Lillehaug (<a href="http://www.meetup.com/javaBin-Trondheim/">javaBin</a>)</li>
-                            <li>Morten Moen (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
-                            <li>Pål Fossmo (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
-                            <li>Ronny Anderssen (<a href='https://spillmakerlauget.no/'>Spillmakerlauget</a>)</li>
-                            <li>Save Asmervik (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim'>Dataforeningen</a>)</li>
-                            <li>Tina Haaskjold Behrens (<a href='https://www.meetup.com/IXDATrondheim/'>IxDA</a>)</li>
+                            <li>Alexander Samsig (<a href="http://www.meetup.com/javaBin-Trondheim/" target="_blank" rel="noopener">javaBin</a>)</li>
+                            <li>Anders Aabakken (<a href="https://www.meetup.com/nnug-trondheim/" target="_blank" rel="noopener">NNUG</a>)</li>
+                            <li>Anders Kringstad (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim' target="_blank" rel="noopener">Dataforeningen</a>)</li>
+                            <li>Hanne Bårdsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim' target="_blank" rel="noopener">Dataforeningen</a>)</li>
+                            <li>Iver Jordal (<a href={'https://www.meetup.com/Trondheim-Machine-Learning-Meetup/'} target="_blank" rel="noopener">Trondheim Machine Learning Meetup</a>)</li>
+                            <li>Ketil Ingebrigtsen (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim' target="_blank" rel="noopener">Dataforeningen</a>)</li>
+                            <li>Kristina Brend (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim' target="_blank" rel="noopener">Dataforeningen</a>)</li>
+                            <li>Marvin Bredal Lillehaug (<a href="http://www.meetup.com/javaBin-Trondheim/" target="_blank" rel="noopener">javaBin</a>)</li>
+                            <li>Morten Moen (<a href="https://www.meetup.com/nnug-trondheim/" target="_blank" rel="noopener">NNUG</a>)</li>
+                            <li>Pål Fossmo (<a href="https://www.meetup.com/nnug-trondheim/" target="_blank" rel="noopener">NNUG</a>)</li>
+                            <li>Ronny Anderssen (<a href='https://spillmakerlauget.no/' target="_blank" rel="noopener">Spillmakerlauget</a>)</li>
+                            <li>Save Asmervik (<a href='https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim' target="_blank" rel="noopener">Dataforeningen</a>)</li>
+                            <li>Tina Haaskjold Behrens (<a href='https://www.meetup.com/IXDATrondheim/' target="_blank" rel="noopener">IxDA</a>)</li>
                         </ul>
                     </div>
                 </div>
