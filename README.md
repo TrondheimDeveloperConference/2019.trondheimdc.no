@@ -48,4 +48,3 @@ Everything is automatic. The `develop` branch is automatically deployed to https
 and `master` is automatically deployed to https://2019.trondheimdc.no. Push to `develop` (or a separate
 branch if you would rather do that) and create a pull request from `develop` to `master` when you want
 to deploy to production.
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
