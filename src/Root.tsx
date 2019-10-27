@@ -61,8 +61,8 @@ const Root: React.FC = () => {
                             international speakers, and call-for-presentation submissions.
                         </p>
 
-                        <p>TDC is a noncommercial event where all profit goes towards next years conference and other
-                            community events throughtout the year in Trondheim</p>
+                        <p>TDC is a noncommercial event where all profit goes towards the next year’s conference and other
+                            community events throughout the year in Trondheim</p>
 
                         <a href="https://www.dataforeningen.no/arrangementer/?fwp_hele_landet=trondheim">
                             <img src={dataforeningen} className="img-fluid" width="15%" alt='Dataforeningen'/>
@@ -81,7 +81,7 @@ const Root: React.FC = () => {
                         </a>
 
                         <p className="mt-4">
-                            The above communitites have joined forces and are giving developers and designers in
+                            The above communities have joined forces and are giving developers and designers in
                             the greater Trondheim region and Norway an arena for learning, networking and communication across all development disciplines.
                         </p>
 
@@ -178,7 +178,7 @@ const Root: React.FC = () => {
                             give you an answer.
                         </p>
 
-                        <p>We are looking to seeing you at Trondheim Developer Conference 2019!</p>
+                        <p>We are looking forward to seeing you at Trondheim Developer Conference 2019!</p>
                     </div>
                 </div>
                 <div className="row mt-5">
@@ -189,7 +189,7 @@ const Root: React.FC = () => {
                         <p>TDC is organized by people from the IT-community in Trondheim, mostly as a cooperation between
                             the many meetups in the area.</p>
 
-                        <p>The members of the 2019 Program Commitee are:</p>
+                        <p>The members of the 2019 Program Committee are:</p>
                         <ul className="members">
                             <li>Alexander Samsig (<a href="http://www.meetup.com/javaBin-Trondheim/">javaBin</a>)</li>
                             <li>Anders Aabakken (<a href="https://www.meetup.com/nnug-trondheim/">NNUG</a>)</li>
