@@ -121,7 +121,7 @@ const SessionContent: React.FC<SCP> = (props) => {
                     {
                         session.intendedAudience.length > 1 &&
                         (<>
-                            <h2>Indended audience</h2>
+                            <h2>Intended audience</h2>
                             <p>{session.intendedAudience}</p>
                         </>)
                     }
