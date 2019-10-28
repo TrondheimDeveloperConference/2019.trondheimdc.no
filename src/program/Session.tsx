@@ -116,13 +116,19 @@ const SessionContent: React.FC<SCP> = (props) => {
             </div>
             <div className="row">
                 <div className="col-md-12 text-center text-white">
-                    <p>{session.abstract}</p>
+                    <p>{session.abstract.split('\n')
+                        .map((item, i) => {
+                        return <span key={i}>{item}<br /></span>;
+                    })}</p>
 
                     {
                         session.intendedAudience.length > 1 &&
                         (<>
                             <h2>Intended audience</h2>
-                            <p>{session.intendedAudience}</p>
+                            <p>{session.intendedAudience.split('\n')
+                                .map((item, i) => {
+                                    return <span key={i}>{item}<br /></span>;
+                                })}</p>
                         </>)
                     }
                 </div>
