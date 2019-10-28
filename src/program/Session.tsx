@@ -139,7 +139,7 @@ const SessionContent: React.FC<SCP> = (props) => {
                         <div className="col-md-12 text-center">
                             <h2>
                                 <span className='mr-2'>{speaker.name}</span>
-                                <a href={`https://twitter.com/${speaker.twitter}`}>
+                                <a href={`https://twitter.com/${speaker.twitter.replace('@', '')}`}>
                                     <Twitter />
                                 </a>
                             </h2>
