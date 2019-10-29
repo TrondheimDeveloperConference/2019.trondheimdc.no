@@ -32,6 +32,8 @@ const Root: React.FC = () => {
                     <div className="col-md-6 text-left text-white mt-4">
                         <p>TDC2019 was a great success! See videos of the talks in <Link to="/program">the program</Link>!</p>
 
+                        <p>The date for Trondheim Developer Conference 2020 is 26th October! Reserve the date now!</p>
+
                         <p>Trondheim Developer Conference – A community-driven conference for people in the Trondheim
                             region will be seven years old in 2019! Don’t miss out on a day of inspiring tech talks,
                             a day of hands-on sessions, mingling, and a great party!</p>
