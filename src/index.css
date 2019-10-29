@@ -338,3 +338,8 @@ nav .navbar-nav li a{
 .navbar-dark .navbar-toggler-icon.collapsed {
     background-image: url('./media/img/icons/hamburger_closed.svg');
 }
+
+.vimeo {
+    height: 519px;
+    width: 924px;
+}

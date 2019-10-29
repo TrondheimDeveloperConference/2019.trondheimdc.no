@@ -26,10 +26,14 @@ const Root: React.FC = () => {
             <div className="container first mb-5">
                 <div className="d-md-flex flex-md-equal">
                     <div className="col-md-6">
-                        <h1 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">Welcome to TDC 2019</h1>
+                        <h1 className="text-lg-right text-md-right text-sm-left pr-5 pt-4 text-white">TDC 2019 has passed!</h1>
                         <img src={bg2} className="img-fluid pr-5 pt-3 float-right" width="30%" alt='' />
                     </div>
                     <div className="col-md-6 text-left text-white mt-4">
+                        <p>TDC2019 was a great success! See videos of the talks in <Link to="/program">the program</Link>!</p>
+
+                        <p>The date for Trondheim Developer Conference 2020 is 26th October! Reserve the date now!</p>
+
                         <p>Trondheim Developer Conference – A community-driven conference for people in the Trondheim
                             region will be seven years old in 2019! Don’t miss out on a day of inspiring tech talks,
                             a day of hands-on sessions, mingling, and a great party!</p>
@@ -43,7 +47,6 @@ const Root: React.FC = () => {
 
                         <p>We would not be what we are today without YOU! Thank you for your support and contributions over the years.</p>
 
-                        <h2><a href='https://tdc.hoopla.no/sales/tdc2019'>Get your tickets now!</a></h2>
                         <p>The last three years the conference has been sold out, so don't wait too long!</p>
                     </div>
                 </div>

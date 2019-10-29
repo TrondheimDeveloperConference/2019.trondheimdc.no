@@ -114,6 +114,20 @@ const SessionContent: React.FC<SCP> = (props) => {
                     &nbsp;{session.language === "en" ? "English" : "Norwegian"}
                 </div>
             </div>
+
+            {session.video &&
+            <div className="row">
+                <div className="col-md-12 text-center text-white">
+                    <iframe className='vimeo'
+                            title="program video"
+                            src={`https://player.vimeo.com/video/${session.video}`}
+                            frameBorder="0"
+                            allowFullScreen>
+                    </iframe>
+                </div>
+            </div>
+            }
+
             <div className="row">
                 <div className="col-md-12 text-center text-white">
                     <p>{session.abstract.split('\n')

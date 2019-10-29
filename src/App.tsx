@@ -80,13 +80,7 @@ export default class App extends PureComponent<Props, State> {
                                     partners
                                 </Link>
                             </li>
-                            <li className="nav-item align-self-center mx-4">
-                                <Link className="nav-link"
-                                      to="/tickets"
-                                      onClick={() => this.collapseMenu()}>
-                                    Tickets
-                                </Link>
-                            </li>
+
                             <li className="nav-item align-self-center mx-4">
                                 <Link className="nav-link d-none d-lg-block"
                                       to="/"
@@ -94,12 +88,7 @@ export default class App extends PureComponent<Props, State> {
                                     <img src={tdc_menu} alt=''/>
                                 </Link>
                             </li>
-                            <li className="nav-item align-self-center mx-4">
-                                <Link className="nav-link"
-                                      to="/startups" onClick={() => this.collapseMenu()}>
-                                    startups
-                                </Link>
-                            </li>
+
                             <li className="nav-item align-self-center mx-4">
                                 <Link className="nav-link"
                                       to="/conduct"
